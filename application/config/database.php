@@ -75,7 +75,7 @@ if($_SERVER['HTTP_HOST']== 'dev.sparkdatabox.in')
 	{
 		
 		$username='whmbppvsmy';
-		$password='5QWMYZvqRQ';
+		$password='P35uB3Stvd';
 		$database='whmbppvsmy';
 	}
 	else if($_SERVER['HTTP_HOST']== 'localhost')

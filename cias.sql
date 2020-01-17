@@ -48,7 +48,7 @@ CREATE TABLE `tbl_last_login` (
   `userAgent` varchar(128) NOT NULL,
   `agentString` varchar(1024) NOT NULL,
   `platform` varchar(128) NOT NULL,
-  `createdDtm` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
+  `createdDtm` datetime NOT NULL DEFAULT '2020-01-01 04:30:43'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------

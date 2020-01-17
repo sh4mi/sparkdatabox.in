@@ -326,17 +326,37 @@
 				<img class="calendar" src="assets/frontend/images/calendar.png">
 				<button class="btn btn-default2">REQUEST A BATCH</button>
 			</div>
-			<!-- <div class="spark">
-				<div><a href="sparkdatabox.com" target="_blank"><img src="assets/frontend/images/logosm.png"><span>Sparkdatabox.com</span></a></div>
-				<p class="text-center">Looking for online training ?</p>
-				<p class="text-center number">
-					<span class="phone-font">
-                    <i class="fa fa-phone mr-2 flar"></i><a href="tel:+91-4446311234" title="+91-4446311234">IND +91-4446311234</a> <br>
-                    <i class="fa fa-phone mr-2 flar"></i><a href="tel:+1-6502652492" title="+91-4446311234">USA +1-6502652492</a> <br>
-                    <i class="fab fa-whatsapp mr-2 wai flar"></i><a href="tel:+91-7530088009" title="+91-7530088009">+91-7530088009</a> <br> 
-                      </span>
+			
+			<div class="box">
+				<h4>One To One Training</h4>
+				<p class="point">Exclusive customized training on Python Programming from a personal trainer at your convenience.</p>
+			</div>
+
+			<div class="box">
+				<h4>Team/Corporate Training</h4>
+				<p class="point">Up-skill your team by training them on Python Programming.</p>
+			</div>
+
+			<div class="box">
+				<h4>Spark Databox Online Training</h4>
+				<p class="point mb-1 mt-2">
+				<a href="tel:+91-4446311234" title="+91-4446311234"><i class="fa fa-phone-alt mr-2 flar"></i>
+				IND +91-4446311234</a>
 				</p>
-			</div> -->
+				<p class="point mb-1">
+				<a href="tel:+1-6502652492" title="+91-4446311234"><i class="fa fa-phone-alt mr-2 flar"></i>
+				USA +1-6502652492</a>
+				</p>
+				<p class="point mb-2">
+				<a href="tel:+91-7530088009" title="+91-7530088009"><i class="fab fa-whatsapp mr-2 wai flar"></i>
+				WAP +91-7530088009</a>
+				</p>
+				<p class="point text-center mb-3">
+				<a href="https://sparkdatabox.com" target="_blank" title="Sparkdatabox">View Our Courses</a>
+				</p>
+
+			</div>
+
 		</div>
 	</div>
 	

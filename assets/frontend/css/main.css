@@ -562,6 +562,26 @@
     line-height: 0;
     opacity: 1;
 }
+
+.video-testimonials .slick-prev, .video-testimonials .slick-next {
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    background-color: #eee;
+    box-shadow: 0 0 1px 1px rgba(20,23,28,.1), 0 3px 1px 0 rgba(20,23,28,.1);
+    z-index: 1;
+    top: calc( 50% - 25px);
+}
+.video-testimonials .slick-prev:before {
+    content: url(prev_arrow.png);
+    line-height: 0;
+    opacity: 1;
+}
+.video-testimonials .slick-next:before {
+    content: url(next_arrow.png);
+    line-height: 0;
+    opacity: 1;
+}
 .related-courses
 {
 	margin-top: 20px;
@@ -640,6 +660,12 @@
 
 
 /* home page css*/
+.video-box
+{
+	margin-left: 5px;
+	float: left;
+	width: 200px;
+}
 .course-details h1 {
     font-size: 44px;
     font-weight: 600;
@@ -971,4 +997,25 @@ padding:5px;
 .hide-sm
 {
 	display: block;
+}
+.video-box .course-imgbox
+{
+	position: relative;
+}
+.video-play-img
+{
+	height: 80px;
+    position: absolute;
+    top: 61px;
+    left: 81px;
+    z-index: 1;
+}
+#videoModal .modal-content
+{
+	border: none;
+    background-color: transparent;
+}
+#videoModal .modal-content iframe{
+        margin: 0 auto;
+        display: block;
 }

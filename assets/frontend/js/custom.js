@@ -1,5 +1,22 @@
 $(document).ready(function(){
 
+     /* Get iframe src attribute value i.e. YouTube video url
+    and store it in a variable */
+    var url = $("#cartoonVideo").attr('src');
+    
+    /* Assign empty url value to the iframe src attribute when
+    modal hide, which stop the video playing */
+    $("#videoModal").on('hide.bs.modal', function(){
+        $("#cartoonVideo").attr('src', '');
+    });
+    
+    /* Assign the initially stored url back to the iframe src
+    attribute when modal is displayed again */
+    $("#videoModal").on('show.bs.modal', function(){
+        $("#cartoonVideo").attr('src', url);
+    });
+	
+
   $(".sidebar-list li a ").hover(function(){
     
      $(".sidebar-list li a ").removeClass("sidebar-link-active");
@@ -34,6 +51,53 @@ $('.course-carousel-live').slick({
         speed: 300,
         slidesToShow: 6,
         slidesToScroll: 6,
+        swipe: true,
+        touchMove: true,
+        responsive: [
+            {
+                breakpoint: 1300,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                }
+            },
+            {
+                breakpoint: 1100,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 4
+                }
+            },
+            {
+                breakpoint: 840,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                }
+            },
+            {
+                breakpoint: 620,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+
+$('.video-testimonials').slick({
+        dots: false,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 5,
+        slidesToScroll: 5,
         swipe: true,
         touchMove: true,
         responsive: [

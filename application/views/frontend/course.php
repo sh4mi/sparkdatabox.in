@@ -507,6 +507,8 @@
 </div>
 <!-- related courses end -->
 
+<?php include_once('video_testimonials.php'); ?>
+
 <!-- course page template scripts -->
 <script type="text/javascript">
 	$(document).ready(function(){

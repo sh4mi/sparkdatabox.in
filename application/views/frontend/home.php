@@ -621,6 +621,10 @@
 </section>
 
 
+
+<?php include_once('video_testimonials.php'); ?>
+
+
 <div class="container-fluid mt-5">
 	<h3 class="section-heading2 text-center bline-partner">Our Partners</h3>
 	<div class=" mt-5 row text-center justify-content-center">
@@ -630,3 +634,4 @@
 	</div>
 	
 </div>
+

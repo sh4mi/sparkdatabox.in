@@ -49,7 +49,7 @@
 	</div>
 </div>
 
-<div class="container mt-5">
+<!-- <div class="container mt-5">
 	<h3 class="section-heading2 text-center bline">Spark Databox Training</h3>
 	<div class="row mt-5 text-center justify-content-center">
 		<div class="col-lg-4 why-us">
@@ -68,7 +68,7 @@
 			<p class="">Learning a technology with a professional who is well expertise in that solve 60% of your needs.</p>
 		</div>
 	</div>
-</div>
+</div> -->
 
 
 <div class="container mt-5">
@@ -413,7 +413,7 @@
     <div class="container-lg">
         <div class="row">
             <div class="col">
-                <h3 class="section-heading2 text-center bline">Our Happy Students</h3>
+                <h3 class="section-heading2 text-center bline">What Our Students Have To Say</h3>
                 <!-- <h1 class="course-carousel-title text-center" style="margin: 33px 30px;color: #000000;font-weight: 600;">Our Happy Students</h1> -->
                 
 <div id="myCarousel" class="carousel slide mt-5" data-ride="carousel">
@@ -626,7 +626,7 @@
 
 
 <div class="container-fluid mt-5">
-	<h3 class="section-heading2 text-center bline-partner">Our Partners</h3>
+	<h3 class="section-heading2 text-center bline-partner">Our Students Placed In</h3>
 	<div class=" mt-5 row text-center justify-content-center">
 		<div class="col-lg-12">
 			<img width="100%" src="assets/frontend/images/comp.png">

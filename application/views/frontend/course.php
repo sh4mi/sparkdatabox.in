@@ -24,8 +24,8 @@
 				Learn AngularJS Training in Chennai from the Besant Technologies which explains the features of AngularJS like the animation support, library support, HTTP service, materials, toolbar, auto-complete, menus, navigation, and browser support. AngularJS is the product of Google, which is gaining popularity due to the SPA design, RXJS version, responsive design, flexibility, bug fixes, performance, open-source and used for the multiple browser support. 
 			</p>
 			<div class="course-buttons mt-4">
-				<button class="btn btn-default w145">Start Now</button>
-				<button class="btn btn-default"><i class="fas fa-phone-alt font-12 mr-2"></i>Contact Course Advisior</button>
+				<button class="btn btn-banner  w145">Start Now</button>
+				<button class="btn btn-banner ml-2"><i class="fa fa-phone-square-alt  mr-2" aria-hidden="true"></i>Contact Course Advisior</button>
 			</div>
 		</div>
 		<div class="course-video col-lg-4">
@@ -65,21 +65,107 @@
 	</div>
 </div>
 
+<section class="fixed_widgets" style="display: block;">
+	<div class="container-fluid">
+		<div class="row">
+			 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs">
+				<div class="fixed_box">
+					<span class="cb_box">
+						<div class="cb_box_inner">
+							<a href="tel:+91-8099770770"><i class="fa fa-phone-square-alt" aria-hidden="true"></i> +91-4446 311 234</a>
+						</div>
+					</span>
+					<span class="dq_box">
+						<div class="dq_box_inner">
+							<a href="mailto:info@sparkdatabox.com" target="_blank" title="info@besanttechnologies.com"><i class="far fa-envelope" aria-hidden="true"></i> Drop A Query</a>
+						</div>
+					</span>					
+					<span class="ct_box">
+						<div class="ct_box_inner">
+							<a href="#"><i class="far fa-envelope-open" aria-hidden="true"></i>Corporate Training</a>
+						</div>	
+						
+						<div class="ct_box_hover" style="display: none;">
+							<h5>Corporate Training</h5>
+							<p>If you want to give the Trending technology experience to your esteemed employees, we are here to help you! </p>
+							
+							<div class="row">
+								<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs">
+									<div class="discount_btn">										
+										<a class="btn btn-primary" href="#" role="button" data-toggle="modal" data-target="#enqModal" data-modalnewtitle="Corporate Training" data-gaeventcate="leadModalOpen" data-gaeventlabel="corporateMidBody" title="Contact Corporate Co-Ordinator">Contact Corporate Co-Ordinator</a>
+									</div>
+								</div>
+							</div>
+						</div>						
+						
+					</span>
+					<span class="in_box">
+						<div class="in_box_inner">
+							<a href="#"> <i class="fa fa-percent" aria-hidden="true"></i> Group Discount</a>
+						</div>
+						<div class="discount_hover" style="display: none;">
+							<h5>Group Discount</h5>
+							<p>If you have Three or more people in your training we will be delighted to offer you a group discount. </p>
+							<div class="row">
+								<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs">
+									<div class="discount_box">
+										<p>3 to 4 People</p>
+										<h4>10%</h4>
+									</div>
+								</div>
+								<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs">
+									<div class="discount_box">
+										<p>5 to 9 People</p>
+										<h4>15%</h4>
+									</div>
+								</div>
+								<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs">
+									<div class="discount_box">
+										<p>10+ People</p>
+										<h4>20%</h4>
+									</div>
+								</div>								
+							</div>
+							<div class="row">
+								<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs">
+									<div class="discount_btn">										
+										<a class="btn btn-primary" href="#" role="button" data-toggle="modal" data-target="#enqModal" data-modalnewtitle="Group Discount" data-gaeventcate="leadModalOpen" data-gaeventlabel="groupDiscountMidBody" title="Get Discount">Get Discount</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</span>
+					<!-- <span class="en_box">
+						<div class="en_box_inner">
+							<a href="https://www.besanttechnologies.com/payment/?utm_source=samedomain&amp;utm_campaign=bklink&amp;utm_medium=pagesidebar&amp;utm_content=onlinepayment" target="_blank" title="Enroll Now">Enroll Now</a>
+							<p>Payment</p>
+						</div>
+					</span> -->
+				</div>
+				
+			 </div>
+		</div>
+	</div>
+</section>
+
 <div class="course-content container-fluid">
 	<div class="row content-row">
 		<div class="col-lg-3 left-sidebar">
 			<ul class="sidebar-list">
 			 <li ><a href="#about" class="sidebar-link-active"><img src="assets/frontend/images/about.png"></i><span>About Course</span></a><!-- <i class="fas fa-caret-right right-arrow"></i> --></li>
-			 <li><a href="#career"><img src="assets/frontend/images/career.png"><span>Career</span></a></li>
-			 <li><a href=""><img src="assets/frontend/images/sylabus.png"><span>Course Syllabus</span></a></li>
-			 <li><a href=""><img src="assets/frontend/images/certificate.png"><span>Certification</span></a></li>
 			 <li><a href="#features"><img src="assets/frontend/images/features.png"><span>Key Features</span></a></li>
+			 <li><a href="#curriculum"><img src="assets/frontend/images/sylabus.png"><span>Course Syllabus</span></a></li>
+			 <li><a href="#career"><img src="assets/frontend/images/career.png"><span>Career</span></a></li>
+			 
+			 <li><a href=""><img src="assets/frontend/images/certificate.png"><span>Certification</span></a></li>
+			 
 			 <li><a href="#reviews"><img src="assets/frontend/images/review.png"><span>Reviews</span></a></li>
-			 <li><a href=""><img src="assets/frontend/images/faq.png"><span>FAQ's</span></a></li>
+			 <li><a href="#faqs"><img src="assets/frontend/images/faq.png"><span>FAQ's</span></a></li>
 			 
 			</ul>
 		</div>
 		<div class="col-lg-7 main-content">
+
 			<div class="section mt-1" id="about">
 				<h3 class="section-heading">About Course</h3>
 				<div class="textblock">
@@ -142,6 +228,78 @@
 			</div>
 			<!-- about section end  -->
 
+			<!-- key feature section  -->
+			<div class="section" id="features">
+			<h3 class="section-heading">Key Features</h3>
+				<div class="feature-block">
+					
+					<div class="row">
+						<div class="col-lg-4">
+							<img src="assets/frontend/images/work.png">
+							<h4>Instructor-led Training</h4>
+							<p>147 hours of highly interactive instructor-led training</p>
+						</div>
+						<div class="col-lg-4">
+							<img src="assets/frontend/images/play.png">
+							<h4>Instructor-led Training</h4>
+							<p>147 hours of highly interactive instructor-led training</p>
+						</div>
+						<div class="col-lg-4">
+							<img src="assets/frontend/images/staff.png">
+							<h4>Instructor-led Training</h4>
+							<p>147 hours of highly interactive instructor-led training</p>
+						</div>
+						<div class="col-lg-4">
+							<img src="assets/frontend/images/rocket.png">
+							<h4>Instructor-led Training</h4>
+							<p>147 hours of highly interactive instructor-led training</p>
+						</div>
+						<div class="col-lg-4">
+							<img src="assets/frontend/images/work.png">
+							<h4>Instructor-led Training</h4>
+							<p>147 hours of highly interactive instructor-led training</p>
+						</div>
+						<div class="col-lg-4">
+							<img src="assets/frontend/images/staff.png">
+							<h4>Instructor-led Training</h4>
+							<p>147 hours of highly interactive instructor-led training</p>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<!-- key features end -->
+
+			<!-- Course syllabus section start  -->
+			<div class="section mt-1" id="curriculum">
+				<h3 class="section-heading"> Course Syllabus</h3>
+				<div class="listblock">
+					<h3 class="subsection-heading">List block</h3>
+					<p class="section-text"></p>
+					<div class="list pl-3">
+						<p class="list-item"><i class="far fa-check-circle list-icon mr-2"></i><span class="list-text">list item 1</span></p>
+						<p class="list-item"><i class="far fa-check-circle list-icon mr-2"></i><span class="list-text">list item 2</span></p>
+						<p class="list-item"><i class="far fa-check-circle list-icon mr-2"></i><span class="list-text">list item 3</span></p>
+						<p class="list-item"><i class="far fa-check-circle list-icon mr-2"></i><span class="list-text">list item 4</span></p>
+						<p class="list-item"><i class="far fa-check-circle list-icon mr-2"></i><span class="list-text">list item 5</span></p>
+						<p class="list-item"><i class="far fa-check-circle list-icon mr-2"></i><span class="list-text">list item 6</span></p>
+					</div>
+				</div>
+				<div class="listblock">
+					<h3 class="subsection-heading">List block</h3>
+					<p class="section-text"></p>
+					<div class="list pl-3">
+						<p class="list-item"><i class="far fa-check-circle list-icon mr-2"></i><span class="list-text">list item 1</span></p>
+						<p class="list-item"><i class="far fa-check-circle list-icon mr-2"></i><span class="list-text">list item 2</span></p>
+						<p class="list-item"><i class="far fa-check-circle list-icon mr-2"></i><span class="list-text">list item 3</span></p>
+						<p class="list-item"><i class="far fa-check-circle list-icon mr-2"></i><span class="list-text">list item 4</span></p>
+						<p class="list-item"><i class="far fa-check-circle list-icon mr-2"></i><span class="list-text">list item 5</span></p>
+						<p class="list-item"><i class="far fa-check-circle list-icon mr-2"></i><span class="list-text">list item 6</span></p>
+					</div>
+				</div>
+			</div>
+			<!-- course syllabus section end -->
+
 			<div class="section" id="career">
 				<h3 class="section-heading">Career</h3>
 
@@ -168,9 +326,7 @@
 							<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDcLvr6MhUMsVaxegJeZe5z1Jt3GCXrcI8uFAEFXtAvVzdbEDJ&s">
 						</div>
 					</div>
-					
-
-		</div>
+				</div>
 
 		
 
@@ -179,46 +335,7 @@
 			</div>
 			<!-- career section end -->
 
-			<div class="section" id="features">
-			<h3 class="section-heading">Key Features</h3>
-			<div class="feature-block">
-				
-				<div class="row">
-					<div class="col-lg-4">
-						<img src="assets/frontend/images/work.png">
-						<h4>Instructor-led Training</h4>
-						<p>147 hours of highly interactive instructor-led training</p>
-					</div>
-					<div class="col-lg-4">
-						<img src="assets/frontend/images/play.png">
-						<h4>Instructor-led Training</h4>
-						<p>147 hours of highly interactive instructor-led training</p>
-					</div>
-					<div class="col-lg-4">
-						<img src="assets/frontend/images/staff.png">
-						<h4>Instructor-led Training</h4>
-						<p>147 hours of highly interactive instructor-led training</p>
-					</div>
-					<div class="col-lg-4">
-						<img src="assets/frontend/images/rocket.png">
-						<h4>Instructor-led Training</h4>
-						<p>147 hours of highly interactive instructor-led training</p>
-					</div>
-					<div class="col-lg-4">
-						<img src="assets/frontend/images/work.png">
-						<h4>Instructor-led Training</h4>
-						<p>147 hours of highly interactive instructor-led training</p>
-					</div>
-					<div class="col-lg-4">
-						<img src="assets/frontend/images/staff.png">
-						<h4>Instructor-led Training</h4>
-						<p>147 hours of highly interactive instructor-led training</p>
-					</div>
-					
-				</div>
-			</div>
-	</div>
-	<!-- key features end -->
+			
 
 			<div class="section" id="reviews">
 			<h3 class="section-heading">User Reviews</h3>
@@ -318,11 +435,146 @@
 		</div>
 		<!-- review section end -->
 
+			<!-- faq section start -->
+			<div class="section" id="faqs">
+			<h3 class="section-heading">FAQ's</h3>
+				<div class="panel-group questions" id="accordion2">
+				
+				<div class="card">
+					<div class="card-header" id="subheadingOne">
+						<h5 class="mb-0">
+							<button class="btn btn-link" data-toggle="collapse" data-target="#subcollapseOne" aria-expanded="true" aria-controls="collapseOne">
+							<img class="plus-open" src="assets/frontend/images/plus.png" /><span class="ml-3 open-text">Collapsible Group Item</span>
+							</button>
+						</h5>
+					</div>
+
+					<div id="subcollapseOne" class="collapse" aria-labelledby="subheadingOne" data-parent="#accordion2">
+						<div class="card-body">
+							Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header" id="subheadingTwo">
+						<h5 class="mb-0">
+							<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#subcollapseTwo" aria-expanded="false" aria-controls="subcollapseTwo">
+								<img class="plus-open" src="assets/frontend/images/plus.png" /><span class="ml-3 open-text">Collapsible Group Item</span>
+							</button>
+						</h5>
+					</div>
+					<div id="subcollapseTwo" class="collapse" aria-labelledby="subheadingTwo" data-parent="#accordion2">
+						<div class="card-body">
+						Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header" id="subheadingThree">
+						<h5 class="mb-0">
+							<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#subcollapseThree" aria-expanded="false" aria-controls="subcollapseThree">
+								<img class="plus-open" src="assets/frontend/images/plus.png" /><span class="ml-3 open-text">Collapsible Group Item</span>
+							</button>
+						</h5>
+					</div>
+					<div id="subcollapseThree" class="collapse" aria-labelledby="subheadingThree" data-parent="#accordion2">
+						<div class="card-body">
+							Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor.
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header" id="subheadingThree">
+						<h5 class="mb-0">
+							<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#subcollapseThree" aria-expanded="false" aria-controls="subcollapseThree">
+								<img class="plus-open" src="assets/frontend/images/plus.png" /><span class="ml-3 open-text">Collapsible Group Item</span>
+							</button>
+						</h5>
+					</div>
+					<div id="subcollapseThree" class="collapse" aria-labelledby="subheadingThree" data-parent="#accordion2">
+						<div class="card-body">
+							Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor.
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header" id="subheadingThree">
+						<h5 class="mb-0">
+							<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#subcollapseThree" aria-expanded="false" aria-controls="subcollapseThree">
+								<img class="plus-open" src="assets/frontend/images/plus.png" /><span class="ml-3 open-text">Collapsible Group Item</span>
+							</button>
+						</h5>
+					</div>
+					<div id="subcollapseThree" class="collapse" aria-labelledby="subheadingThree" data-parent="#accordion2">
+						<div class="card-body">
+							Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor.
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header" id="subheadingThree">
+						<h5 class="mb-0">
+							<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#subcollapseThree" aria-expanded="false" aria-controls="subcollapseThree">
+								<img class="plus-open" src="assets/frontend/images/plus.png" /><span class="ml-3 open-text">Collapsible Group Item</span>
+							</button>
+						</h5>
+					</div>
+					<div id="subcollapseThree" class="collapse" aria-labelledby="subheadingThree" data-parent="#accordion2">
+						<div class="card-body">
+							Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor.
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header" id="subheadingThree">
+						<h5 class="mb-0">
+							<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#subcollapseThree" aria-expanded="false" aria-controls="subcollapseThree">
+								<img class="plus-open" src="assets/frontend/images/plus.png" /><span class="ml-3 open-text">Collapsible Group Item</span>
+							</button>
+						</h5>
+					</div>
+					<div id="subcollapseThree" class="collapse" aria-labelledby="subheadingThree" data-parent="#accordion2">
+						<div class="card-body">
+							Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor.
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header" id="subheadingThree">
+						<h5 class="mb-0">
+							<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#subcollapseThree" aria-expanded="false" aria-controls="subcollapseThree">
+								<img class="plus-open" src="assets/frontend/images/plus.png" /><span class="ml-3 open-text">Collapsible Group Item</span>
+							</button>
+						</h5>
+					</div>
+					<div id="subcollapseThree" class="collapse" aria-labelledby="subheadingThree" data-parent="#accordion2">
+						<div class="card-body">
+							Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor.
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header" id="subheadingThree">
+						<h5 class="mb-0">
+							<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#subcollapseThree" aria-expanded="false" aria-controls="subcollapseThree">
+								<img class="plus-open" src="assets/frontend/images/plus.png" /><span class="ml-3 open-text">Collapsible Group Item</span>
+							</button>
+						</h5>
+					</div>
+					<div id="subcollapseThree" class="collapse" aria-labelledby="subheadingThree" data-parent="#accordion2">
+						<div class="card-body">
+							Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor.
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+			<!-- faq section end -->
 
 
 		</div>
 		<div class="col-lg-3 right-sidebar">
-			<div class="batch">
+			<!-- <div class="batch">
 				<img class="calendar" src="assets/frontend/images/calendar.png">
 				<button class="btn btn-default2">REQUEST A BATCH</button>
 			</div>
@@ -335,6 +587,45 @@
 			<div class="box">
 				<h4>Team/Corporate Training</h4>
 				<p class="point">Up-skill your team by training them on Python Programming.</p>
+			</div> -->
+
+			<div class="box">
+				<h4 class="text-center">Recently Placed Students</h4>
+				<div class="sliding example3">
+					<div class="one">
+						<div class="one-user text-center">
+							<img src="https://media.licdn.com/dms/image/C4D03AQHDm0Q_JNXKSQ/profile-displayphoto-shrink_200_200/0?e=1583971200&v=beta&t=ZjgQvyiE6yCtmG9dN1tGZxCndrkZph-tbsivk7jQ5cY" class="user-img">
+							<span class="username">Suresh Kumar</span>
+							<span class="designation">Big Data,ML and AI Specialist at Microsoft.</span>
+						</div>
+						<div class="one-user text-center">
+							<img src="https://media.licdn.com/dms/image/C5103AQE3_Rh9UnQuaQ/profile-displayphoto-shrink_200_200/0?e=1583971200&v=beta&t=Bm7pLBvOrjcFL0lB9DvzgOypoVTBbX9nXhvfPEoHbiQ" class="user-img">
+							<span class="username">Prem Nandhakumar</span>
+							<span class="designation">Solution Architect at DW ETL and BI systems..</span>
+						</div>
+						<div class="one-user text-center">
+							<img src="https://media.licdn.com/dms/image/C4D03AQHDm0Q_JNXKSQ/profile-displayphoto-shrink_200_200/0?e=1583971200&v=beta&t=ZjgQvyiE6yCtmG9dN1tGZxCndrkZph-tbsivk7jQ5cY" class="user-img">
+							<span class="username">Suresh Kumar</span>
+							<span class="designation">Big Data,ML and AI Specialist at Microsoft.</span>
+						</div>
+						<div class="one-user text-center">
+							<img src="https://media.licdn.com/dms/image/C5103AQE3_Rh9UnQuaQ/profile-displayphoto-shrink_200_200/0?e=1583971200&v=beta&t=Bm7pLBvOrjcFL0lB9DvzgOypoVTBbX9nXhvfPEoHbiQ" class="user-img">
+							<span class="username">Prem Nandhakumar</span>
+							<span class="designation">Solution Architect at DW ETL and BI systems..</span>
+						</div>
+						<div class="one-user text-center">
+							<img src="https://media.licdn.com/dms/image/C4D03AQHDm0Q_JNXKSQ/profile-displayphoto-shrink_200_200/0?e=1583971200&v=beta&t=ZjgQvyiE6yCtmG9dN1tGZxCndrkZph-tbsivk7jQ5cY" class="user-img">
+							<span class="username">Suresh Kumar</span>
+							<span class="designation">Big Data,ML and AI Specialist at Microsoft.</span>
+						</div>
+						<div class="one-user text-center">
+							<img src="https://media.licdn.com/dms/image/C5103AQE3_Rh9UnQuaQ/profile-displayphoto-shrink_200_200/0?e=1583971200&v=beta&t=Bm7pLBvOrjcFL0lB9DvzgOypoVTBbX9nXhvfPEoHbiQ" class="user-img">
+							<span class="username">Prem Nandhakumar</span>
+							<span class="designation">Solution Architect at DW ETL and BI systems..</span>
+						</div>
+					</div>
+					
+				</div>
 			</div>
 
 			<div class="box">

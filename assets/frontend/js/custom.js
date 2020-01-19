@@ -27,6 +27,22 @@ $(document).ready(function(){
     // $(".sidebar-list li i").remove();
   });
 
+  $(".ct_box").hover(function(){
+    
+     $(".ct_box_hover").show();
+    
+    }, function(){
+   		$(".ct_box_hover").hide();
+  });
+
+  $(".in_box").hover(function(){
+    
+     $(".discount_hover").show();
+    
+    }, function(){
+   		$(".discount_hover").hide();
+  });
+
 $(function () {
 	function toggleOpen(e) {
 		$(e.target)

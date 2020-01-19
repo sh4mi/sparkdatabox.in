@@ -24,7 +24,7 @@
 				Learn AngularJS Training in Chennai from the Besant Technologies which explains the features of AngularJS like the animation support, library support, HTTP service, materials, toolbar, auto-complete, menus, navigation, and browser support. AngularJS is the product of Google, which is gaining popularity due to the SPA design, RXJS version, responsive design, flexibility, bug fixes, performance, open-source and used for the multiple browser support. 
 			</p>
 			<div class="course-buttons mt-4">
-				<button class="btn btn-banner  w145">Start Now</button>
+				<button class="btn btn-banner"><i class="far fa-calendar-check  mr-2" aria-hidden="true"></i>Upcoming Batches</button>
 				<button class="btn btn-banner ml-2"><i class="fa fa-phone-square-alt  mr-2" aria-hidden="true"></i>Contact Course Advisior</button>
 			</div>
 		</div>
@@ -160,9 +160,9 @@
 							</div>
 						</div>
 					</span>
-					<span class="en_box">
+					<span class="en_box" style="margin:0px">
 						<div class="en_box_inner">
-							<a href="https://www.besanttechnologies.com/payment/?utm_source=samedomain&amp;utm_campaign=bklink&amp;utm_medium=pagesidebar&amp;utm_content=onlinepayment" target="_blank" title="Enroll Now">Enroll Now</a>
+							<a href="https://www.besanttechnologies.com/payment/?utm_source=samedomain&amp;utm_campaign=bklink&amp;utm_medium=pagesidebar&amp;utm_content=onlinepayment" target="_blank" title="Download">Download Syllabus</a>
 							<p>Payment</p>
 						</div>
 					</span>

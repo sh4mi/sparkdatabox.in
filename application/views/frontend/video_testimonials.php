@@ -9,7 +9,12 @@
 						<a href="#videoModal" class="" data-toggle="modal">
 						<div class="course-imgbox js-video-button" data-video-url="">
 							<img src="https://312895-958381-raikfcquaxqncofqfm.stackpathdns.com/uploads/thumbnails/course_thumbnails/a4d711721c8e7ce57a0b369c2fde1c2c.jpg" class="course-img">
-							<img class="video-play-img" src="assets/frontend/images/play.png">
+							<div class="video-btn">
+	            	<i class="fa fa-play"></i>
+	            	<div class="ripple orangebg"></div>
+		            <div class="ripple orangebg"></div>
+		            <div class="ripple orangebg"></div>
+	          	</div>
 						</div>
 						</a>
 					</div>
@@ -18,7 +23,12 @@
 						<a href="#videoModal" class="" data-toggle="modal">
 						<div class="course-imgbox js-video-button" data-video-url="">
 							<img src="https://312895-958381-raikfcquaxqncofqfm.stackpathdns.com/uploads/thumbnails/course_thumbnails/a4d711721c8e7ce57a0b369c2fde1c2c.jpg" class="course-img">
-							<img class="video-play-img" src="assets/frontend/images/play.png">
+							<div class="video-btn">
+	            	<i class="fa fa-play"></i>
+	            	<div class="ripple orangebg"></div>
+		            <div class="ripple orangebg"></div>
+		            <div class="ripple orangebg"></div>
+	          	</div>
 						</div>
 						</a>
 					</div>
@@ -27,7 +37,12 @@
 						<a href="#videoModal" class="" data-toggle="modal">
 						<div class="course-imgbox js-video-button" data-video-url="">
 							<img src="https://312895-958381-raikfcquaxqncofqfm.stackpathdns.com/uploads/thumbnails/course_thumbnails/a4d711721c8e7ce57a0b369c2fde1c2c.jpg" class="course-img">
-							<img class="video-play-img" src="assets/frontend/images/play.png">
+							<div class="video-btn">
+	            	<i class="fa fa-play"></i>
+	            	<div class="ripple orangebg"></div>
+		            <div class="ripple orangebg"></div>
+		            <div class="ripple orangebg"></div>
+	          	</div>
 						</div>
 						</a>
 					</div>
@@ -36,7 +51,12 @@
 						<a href="#videoModal" class="" data-toggle="modal">
 						<div class="course-imgbox js-video-button" data-video-url="">
 							<img src="https://312895-958381-raikfcquaxqncofqfm.stackpathdns.com/uploads/thumbnails/course_thumbnails/a4d711721c8e7ce57a0b369c2fde1c2c.jpg" class="course-img">
-							<img class="video-play-img" src="assets/frontend/images/play.png">
+							<div class="video-btn">
+	            	<i class="fa fa-play"></i>
+	            	<div class="ripple orangebg"></div>
+		            <div class="ripple orangebg"></div>
+		            <div class="ripple orangebg"></div>
+	          	</div>
 						</div>
 						</a>
 					</div>
@@ -45,7 +65,12 @@
 						<a href="#videoModal" class="" data-toggle="modal">
 						<div class="course-imgbox js-video-button" data-video-url="">
 							<img src="https://312895-958381-raikfcquaxqncofqfm.stackpathdns.com/uploads/thumbnails/course_thumbnails/a4d711721c8e7ce57a0b369c2fde1c2c.jpg" class="course-img">
-							<img class="video-play-img" src="assets/frontend/images/play.png">
+							<div class="video-btn">
+	            	<i class="fa fa-play"></i>
+	            	<div class="ripple orangebg"></div>
+		            <div class="ripple orangebg"></div>
+		            <div class="ripple orangebg"></div>
+	          	</div>
 						</div>
 						</a>
 					</div>
@@ -54,7 +79,12 @@
 						<a href="#videoModal" class="" data-toggle="modal">
 						<div class="course-imgbox js-video-button" data-video-url="">
 							<img src="https://312895-958381-raikfcquaxqncofqfm.stackpathdns.com/uploads/thumbnails/course_thumbnails/a4d711721c8e7ce57a0b369c2fde1c2c.jpg" class="course-img">
-							<img class="video-play-img" src="assets/frontend/images/play.png">
+							<div class="video-btn">
+	            	<i class="fa fa-play"></i>
+	            	<div class="ripple orangebg"></div>
+		            <div class="ripple orangebg"></div>
+		            <div class="ripple orangebg"></div>
+	          	</div>
 						</div>
 						</a>
 					</div>
@@ -63,7 +93,12 @@
 						<a href="#videoModal" class="" data-toggle="modal">
 						<div class="course-imgbox js-video-button" data-video-url="">
 							<img src="https://312895-958381-raikfcquaxqncofqfm.stackpathdns.com/uploads/thumbnails/course_thumbnails/a4d711721c8e7ce57a0b369c2fde1c2c.jpg" class="course-img">
-							<img class="video-play-img" src="assets/frontend/images/play.png">
+							<div class="video-btn">
+	            	<i class="fa fa-play"></i>
+	            	<div class="ripple orangebg"></div>
+		            <div class="ripple orangebg"></div>
+		            <div class="ripple orangebg"></div>
+	          	</div>
 						</div>
 						</a>
 					</div>
@@ -72,7 +107,12 @@
 						<a href="#videoModal" class="" data-toggle="modal">
 						<div class="course-imgbox js-video-button" data-video-url="">
 							<img src="https://312895-958381-raikfcquaxqncofqfm.stackpathdns.com/uploads/thumbnails/course_thumbnails/a4d711721c8e7ce57a0b369c2fde1c2c.jpg" class="course-img">
-							<img class="video-play-img" src="assets/frontend/images/play.png">
+							<div class="video-btn">
+	            	<i class="fa fa-play"></i>
+	            	<div class="ripple orangebg"></div>
+		            <div class="ripple orangebg"></div>
+		            <div class="ripple orangebg"></div>
+	          	</div>
 						</div>
 						</a>
 					</div>

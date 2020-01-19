@@ -53,7 +53,7 @@
     font-weight: 400;
 }
 .btn-primary {
-    color: #fff;
+    color: #fff !important;
     background-color: #3a9aae;
     border: 1px solid #3a9aae;
     font-weight: 400;
@@ -167,7 +167,7 @@
    list-style-type: none;
     border: 1px solid #5e5e5d;
     margin: 7px 0px;
-    background: #eae6e6;
+    background: #f5f3f3;
     cursor: pointer;
 }
 }
@@ -351,7 +351,7 @@
 }
 .fixed-right{
 	    position: fixed;
-    top: 60px;
+    top: 45px;
     right: 35px;
 }
 .col-offset-25
@@ -510,18 +510,15 @@
 }
 .section
 {
-	border-bottom: 1px solid #c7c7c7;
+	    border: 1px solid #c7c7c7;
     margin-bottom: 15px;
     padding-bottom: 15px;
+    padding: 10px;
 }
-.section:last-child
-{
-	border: none;
-}
+
 .main-content
 {
-	border: 1px solid #d5d5d5;
-    padding: 10px;
+	    padding: 0px;
 }
 .course
 {
@@ -610,8 +607,8 @@
 	margin-bottom: 25px;
 }
 .related-heading span::after {
-    content: "";
-    background: #25001B;
+       content: "";
+    background: #3e8695;
     width: 150px;
     height: 3px;
     display: block;
@@ -1038,7 +1035,7 @@ padding:5px;
 }
 .right-sidebar .box
 {
-	padding: 15px 8px 0px 13px;
+	padding: 0px 8px 0px 13px;
     border: 1px solid #d4d4d4;
     margin-top: 15px;
     border-radius: 3px;
@@ -1051,6 +1048,17 @@ padding:5px;
     font-size: 14px;
     font-weight: 600;
     margin-bottom: 4px;
+    background: #f5f3f3;
+    padding: 12px 0px;
+    margin: -5px -10px 0px -13px;
+    text-align: center;
+}
+
+
+
+
+
+
 }
 .right-sidebar .box p
 {
@@ -1079,7 +1087,7 @@ padding:5px;
 .fixed_box {
     margin: 0 auto;
     display: block;
-    text-align: center;
+    text-align:left;
 }
 .fixed_box span {
     display: inline-block;
@@ -1090,8 +1098,9 @@ padding:5px;
 }
 
 .cb_box {
-        background: #3a9aae;
-    width: 20%;
+    background: #3a9aae;
+    width: 17.3%;
+    margin-left: -3px !important;
 }
 .cb_box_inner, .dq_box_inner, .ct_box_inner, .in_box_inner, .en_box_inner {
     display: table;
@@ -1133,7 +1142,7 @@ padding:5px;
     display: block;
     position: absolute;
     top: 0;
-    right: -20px;
+    right: -17px;
 }
 .ct_box_hover {
     position: absolute;
@@ -1156,6 +1165,7 @@ padding:5px;
     padding: 5px 0;
     line-height: 20px;
 }
+
 .discount_btn .btn.btn-primary {
     display: table;
     margin: 15px auto 0;
@@ -1280,7 +1290,7 @@ padding:5px;
 	margin-top: 12px;
 }
 .example3 {
- height: 200px;	
+ height: 360px;	
  overflow: hidden;
  position: relative;
 }
@@ -1317,4 +1327,9 @@ width: 100%;
  -webkit-transform: translateY(100%); /* Firefox bug fix */
  transform: translateY(100%); 
  }
+}
+
+h3
+{
+	color: #6b6b6b;
 }

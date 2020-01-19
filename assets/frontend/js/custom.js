@@ -27,12 +27,20 @@ $(document).ready(function(){
     // $(".sidebar-list li i").remove();
   });
 
-  $(".ct_box").hover(function(){
+  $("#ct_box").hover(function(){
     
-     $(".ct_box_hover").show();
+     $("#ct_box_hover").show();
     
     }, function(){
-   		$(".ct_box_hover").hide();
+   		$("#ct_box_hover").hide();
+  });
+
+  $("#ct_online").hover(function(){
+    
+     $("#ct_online_hover").show();
+    
+    }, function(){
+   		$("#ct_online_hover").hide();
   });
 
   $(".in_box").hover(function(){

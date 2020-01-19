@@ -80,12 +80,12 @@
 							<a href="mailto:info@sparkdatabox.com" target="_blank" title="info@besanttechnologies.com"><i class="far fa-envelope" aria-hidden="true"></i> Drop A Query</a>
 						</div>
 					</span>					
-					<span class="ct_box">
+					<span class="ct_box" id="ct_box">
 						<div class="ct_box_inner">
 							<a href="#"><i class="far fa-envelope-open" aria-hidden="true"></i>Corporate Training</a>
 						</div>	
 						
-						<div class="ct_box_hover" style="display: none;">
+						<div class="ct_box_hover" id="ct_box_hover" style="display: none;">
 							<h5>Corporate Training</h5>
 							<p>If you want to give the Trending technology experience to your esteemed employees, we are here to help you! </p>
 							
@@ -96,6 +96,31 @@
 									</div>
 								</div>
 							</div>
+						</div>						
+						
+					</span>
+					<span class="ct_box" id="ct_online">
+						<div class="ct_box_inner">
+							<a href="#"><i class="far fa-envelope-open" aria-hidden="true"></i>Online Training</a>
+						</div>	
+						
+						<div class="ct_box_hover" id="ct_online_hover" style="display: none;">
+							<h5 class="text-center">Spark Databox Online Training</h5>
+							<p class="point mb-1 mt-2">
+							<a href="tel:+91-4446311234" title="+91-4446311234"><i class="fa fa-phone-alt mr-2 flar"></i>
+							IND +91-4446311234</a>
+							</p>
+							<p class="point mb-1">
+							<a href="tel:+1-6502652492" title="+91-4446311234"><i class="fa fa-phone-alt mr-2 flar"></i>
+							USA +1-6502652492</a>
+							</p>
+							<p class="point mb-2">
+							<a href="tel:+91-7530088009" title="+91-7530088009"><i class="fab fa-whatsapp mr-2 wai flar"></i>
+							WAP +91-7530088009</a>
+							</p>
+							<p class="point text-center mb-3">
+							<a class="btn btn-primary display-inline" href="https://sparkdatabox.com" target="_blank" title="Sparkdatabox">View Online Courses</a>
+							</p>
 						</div>						
 						
 					</span>
@@ -135,12 +160,12 @@
 							</div>
 						</div>
 					</span>
-					<!-- <span class="en_box">
+					<span class="en_box">
 						<div class="en_box_inner">
 							<a href="https://www.besanttechnologies.com/payment/?utm_source=samedomain&amp;utm_campaign=bklink&amp;utm_medium=pagesidebar&amp;utm_content=onlinepayment" target="_blank" title="Enroll Now">Enroll Now</a>
 							<p>Payment</p>
 						</div>
-					</span> -->
+					</span>
 				</div>
 				
 			 </div>
@@ -155,9 +180,8 @@
 			 <li ><a href="#about" class="sidebar-link-active"><img src="assets/frontend/images/about.png"></i><span>About Course</span></a><!-- <i class="fas fa-caret-right right-arrow"></i> --></li>
 			 <li><a href="#features"><img src="assets/frontend/images/features.png"><span>Key Features</span></a></li>
 			 <li><a href="#curriculum"><img src="assets/frontend/images/sylabus.png"><span>Course Syllabus</span></a></li>
-			 <li><a href="#career"><img src="assets/frontend/images/career.png"><span>Career</span></a></li>
-			 
-			 <li><a href=""><img src="assets/frontend/images/certificate.png"><span>Certification</span></a></li>
+			 <!-- <li><a href="#career"><img src="assets/frontend/images/career.png"><span>Career</span></a></li> -->
+			 <li><a href="#certification"><img src="assets/frontend/images/certificate.png"><span>Certification</span></a></li>
 			 
 			 <li><a href="#reviews"><img src="assets/frontend/images/review.png"><span>Reviews</span></a></li>
 			 <li><a href="#faqs"><img src="assets/frontend/images/faq.png"><span>FAQ's</span></a></li>
@@ -300,8 +324,8 @@
 			</div>
 			<!-- course syllabus section end -->
 
-			<div class="section" id="career">
-				<h3 class="section-heading">Career</h3>
+			<div class="section" id="certification">
+				<h3 class="section-heading">Certification</h3>
 
 				<div class="listblock">
 					<h3 class="subsection-heading">List block</h3>
@@ -333,7 +357,7 @@
 		
 			
 			</div>
-			<!-- career section end -->
+			<!-- certification section end -->
 
 			
 
@@ -628,7 +652,7 @@
 				</div>
 			</div>
 
-			<div class="box">
+			<!-- <div class="box sparkwalabox">
 				<h4>Spark Databox Online Training</h4>
 				<p class="point mb-1 mt-2">
 				<a href="tel:+91-4446311234" title="+91-4446311234"><i class="fa fa-phone-alt mr-2 flar"></i>
@@ -646,7 +670,7 @@
 				<a href="https://sparkdatabox.com" target="_blank" title="Sparkdatabox">View Our Courses</a>
 				</p>
 
-			</div>
+			</div> -->
 
 		</div>
 	</div>
@@ -847,7 +871,7 @@
 
         $('.section').each(function() {
         	var target = $(this).offset().top;
-        	target -= 50;
+        	target -= 120;
        		var id = $(this).attr('id');
 
 	        if (position >= target) 
@@ -861,19 +885,23 @@
 
 
     	var rc = $(".related-courses").offset().top;
-    	rc -=300;
+    	rc -=500;
+    	rspark = rc-300;
+    	if(position >= rspark)
+    	{
+    		$(".sparkwalabox").hide();
+    	}
+    	else
+    	{
+    		$(".sparkwalabox").show();
+    	}
     	if(position >= rc)
     	{
     		$(".main-content").removeClass("col-offset-25");
     		$('.left-sidebar').removeClass('fixed');
             $('.right-sidebar').removeClass('fixed-right');
     	}
-    	// else if(position < rc)
-    	// {
-    	// 	$(".main-content").addClass("col-offset-25");
-     //        $('.left-sidebar').addClass('fixed');
-     //        $('.right-sidebar').addClass('fixed-right');
-    	// }
+    	
 
 
         	});

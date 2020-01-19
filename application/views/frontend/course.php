@@ -82,7 +82,7 @@
 					</span>					
 					<span class="ct_box" id="ct_box">
 						<div class="ct_box_inner">
-							<a href="#"><i class="far fa-envelope-open" aria-hidden="true"></i>Corporate Training</a>
+							<a href="#"><i class="fas fa-city" aria-hidden="true"></i>Corporate Training</a>
 						</div>	
 						
 						<div class="ct_box_hover" id="ct_box_hover" style="display: none;">
@@ -101,7 +101,7 @@
 					</span>
 					<span class="ct_box" id="ct_online">
 						<div class="ct_box_inner">
-							<a href="#"><i class="far fa-envelope-open" aria-hidden="true"></i>Online Training</a>
+							<a href="#"><i class="fas fa-chalkboard" aria-hidden="true"></i>Online Training</a>
 						</div>	
 						
 						<div class="ct_box_hover" id="ct_online_hover" style="display: none;">
@@ -126,7 +126,7 @@
 					</span>
 					<span class="in_box">
 						<div class="in_box_inner">
-							<a href="#"> <i class="fa fa-percent" aria-hidden="true"></i> Group Discount</a>
+							<a href="#"> <i class="fas fa-dollar-sign" aria-hidden="true"></i> Group Discount</a>
 						</div>
 						<div class="discount_hover" style="display: none;">
 							<h5>Group Discount</h5>
@@ -163,7 +163,7 @@
 					<span class="en_box" style="margin:0px">
 						<div class="en_box_inner">
 							<a href="https://www.besanttechnologies.com/payment/?utm_source=samedomain&amp;utm_campaign=bklink&amp;utm_medium=pagesidebar&amp;utm_content=onlinepayment" target="_blank" title="Download">Download Syllabus</a>
-							<p>Payment</p>
+							
 						</div>
 					</span>
 				</div>

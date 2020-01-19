@@ -11,9 +11,7 @@
 							<img src="https://312895-958381-raikfcquaxqncofqfm.stackpathdns.com/uploads/thumbnails/course_thumbnails/a4d711721c8e7ce57a0b369c2fde1c2c.jpg" class="course-img">
 							<div class="video-btn">
 	            	<i class="fa fa-play"></i>
-	            	<div class="ripple orangebg"></div>
-		            <div class="ripple orangebg"></div>
-		            <div class="ripple orangebg"></div>
+	            	
 	          	</div>
 						</div>
 						</a>
@@ -25,9 +23,7 @@
 							<img src="https://312895-958381-raikfcquaxqncofqfm.stackpathdns.com/uploads/thumbnails/course_thumbnails/a4d711721c8e7ce57a0b369c2fde1c2c.jpg" class="course-img">
 							<div class="video-btn">
 	            	<i class="fa fa-play"></i>
-	            	<div class="ripple orangebg"></div>
-		            <div class="ripple orangebg"></div>
-		            <div class="ripple orangebg"></div>
+	            	
 	          	</div>
 						</div>
 						</a>
@@ -39,9 +35,7 @@
 							<img src="https://312895-958381-raikfcquaxqncofqfm.stackpathdns.com/uploads/thumbnails/course_thumbnails/a4d711721c8e7ce57a0b369c2fde1c2c.jpg" class="course-img">
 							<div class="video-btn">
 	            	<i class="fa fa-play"></i>
-	            	<div class="ripple orangebg"></div>
-		            <div class="ripple orangebg"></div>
-		            <div class="ripple orangebg"></div>
+	            	
 	          	</div>
 						</div>
 						</a>
@@ -53,9 +47,7 @@
 							<img src="https://312895-958381-raikfcquaxqncofqfm.stackpathdns.com/uploads/thumbnails/course_thumbnails/a4d711721c8e7ce57a0b369c2fde1c2c.jpg" class="course-img">
 							<div class="video-btn">
 	            	<i class="fa fa-play"></i>
-	            	<div class="ripple orangebg"></div>
-		            <div class="ripple orangebg"></div>
-		            <div class="ripple orangebg"></div>
+	            	
 	          	</div>
 						</div>
 						</a>
@@ -67,9 +59,7 @@
 							<img src="https://312895-958381-raikfcquaxqncofqfm.stackpathdns.com/uploads/thumbnails/course_thumbnails/a4d711721c8e7ce57a0b369c2fde1c2c.jpg" class="course-img">
 							<div class="video-btn">
 	            	<i class="fa fa-play"></i>
-	            	<div class="ripple orangebg"></div>
-		            <div class="ripple orangebg"></div>
-		            <div class="ripple orangebg"></div>
+	            	
 	          	</div>
 						</div>
 						</a>
@@ -81,9 +71,7 @@
 							<img src="https://312895-958381-raikfcquaxqncofqfm.stackpathdns.com/uploads/thumbnails/course_thumbnails/a4d711721c8e7ce57a0b369c2fde1c2c.jpg" class="course-img">
 							<div class="video-btn">
 	            	<i class="fa fa-play"></i>
-	            	<div class="ripple orangebg"></div>
-		            <div class="ripple orangebg"></div>
-		            <div class="ripple orangebg"></div>
+	            	
 	          	</div>
 						</div>
 						</a>
@@ -95,9 +83,7 @@
 							<img src="https://312895-958381-raikfcquaxqncofqfm.stackpathdns.com/uploads/thumbnails/course_thumbnails/a4d711721c8e7ce57a0b369c2fde1c2c.jpg" class="course-img">
 							<div class="video-btn">
 	            	<i class="fa fa-play"></i>
-	            	<div class="ripple orangebg"></div>
-		            <div class="ripple orangebg"></div>
-		            <div class="ripple orangebg"></div>
+	            	
 	          	</div>
 						</div>
 						</a>
@@ -109,9 +95,7 @@
 							<img src="https://312895-958381-raikfcquaxqncofqfm.stackpathdns.com/uploads/thumbnails/course_thumbnails/a4d711721c8e7ce57a0b369c2fde1c2c.jpg" class="course-img">
 							<div class="video-btn">
 	            	<i class="fa fa-play"></i>
-	            	<div class="ripple orangebg"></div>
-		            <div class="ripple orangebg"></div>
-		            <div class="ripple orangebg"></div>
+	            	
 	          	</div>
 						</div>
 						</a>

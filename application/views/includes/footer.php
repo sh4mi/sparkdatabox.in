@@ -89,8 +89,8 @@
         </div>
         <strong>Copyright &copy; 2020-2021 <a href="<?php echo base_url(); ?>">Spark Databox</a>.</strong> All rights reserved.
     </footer>
-<script type="text/javascript" src="<?php echo base_url(); ?>assets/dist/dataTables/dt/js/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" src="<?php echo base_url(); ?>assets/dist/dataTables/dt/js/dataTables.bootstrap.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/dist/DataTables/dt/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>assets/dist/DataTables/dt/js/dataTables.bootstrap.min.js"></script>
     
     
     <script src="<?php echo base_url(); ?>assets/js/common.js" type="text/javascript"></script>

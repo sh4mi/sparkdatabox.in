@@ -479,118 +479,14 @@
 						</div>
 					</div>
 				</div>
-				<div class="card">
-					<div class="card-header" id="subheadingTwo">
-						<h5 class="mb-0">
-							<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#subcollapseTwo" aria-expanded="false" aria-controls="subcollapseTwo">
-								<img class="plus-open" src="assets/frontend/images/plus.png" /><span class="ml-3 open-text">Collapsible Group Item</span>
-							</button>
-						</h5>
-					</div>
-					<div id="subcollapseTwo" class="collapse" aria-labelledby="subheadingTwo" data-parent="#accordion2">
-						<div class="card-body">
-						Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-						</div>
-					</div>
-				</div>
-				<div class="card">
-					<div class="card-header" id="subheadingThree">
-						<h5 class="mb-0">
-							<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#subcollapseThree" aria-expanded="false" aria-controls="subcollapseThree">
-								<img class="plus-open" src="assets/frontend/images/plus.png" /><span class="ml-3 open-text">Collapsible Group Item</span>
-							</button>
-						</h5>
-					</div>
-					<div id="subcollapseThree" class="collapse" aria-labelledby="subheadingThree" data-parent="#accordion2">
-						<div class="card-body">
-							Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor.
-						</div>
-					</div>
-				</div>
-				<div class="card">
-					<div class="card-header" id="subheadingThree">
-						<h5 class="mb-0">
-							<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#subcollapseThree" aria-expanded="false" aria-controls="subcollapseThree">
-								<img class="plus-open" src="assets/frontend/images/plus.png" /><span class="ml-3 open-text">Collapsible Group Item</span>
-							</button>
-						</h5>
-					</div>
-					<div id="subcollapseThree" class="collapse" aria-labelledby="subheadingThree" data-parent="#accordion2">
-						<div class="card-body">
-							Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor.
-						</div>
-					</div>
-				</div>
-				<div class="card">
-					<div class="card-header" id="subheadingThree">
-						<h5 class="mb-0">
-							<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#subcollapseThree" aria-expanded="false" aria-controls="subcollapseThree">
-								<img class="plus-open" src="assets/frontend/images/plus.png" /><span class="ml-3 open-text">Collapsible Group Item</span>
-							</button>
-						</h5>
-					</div>
-					<div id="subcollapseThree" class="collapse" aria-labelledby="subheadingThree" data-parent="#accordion2">
-						<div class="card-body">
-							Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor.
-						</div>
-					</div>
-				</div>
-				<div class="card">
-					<div class="card-header" id="subheadingThree">
-						<h5 class="mb-0">
-							<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#subcollapseThree" aria-expanded="false" aria-controls="subcollapseThree">
-								<img class="plus-open" src="assets/frontend/images/plus.png" /><span class="ml-3 open-text">Collapsible Group Item</span>
-							</button>
-						</h5>
-					</div>
-					<div id="subcollapseThree" class="collapse" aria-labelledby="subheadingThree" data-parent="#accordion2">
-						<div class="card-body">
-							Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor.
-						</div>
-					</div>
-				</div>
-				<div class="card">
-					<div class="card-header" id="subheadingThree">
-						<h5 class="mb-0">
-							<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#subcollapseThree" aria-expanded="false" aria-controls="subcollapseThree">
-								<img class="plus-open" src="assets/frontend/images/plus.png" /><span class="ml-3 open-text">Collapsible Group Item</span>
-							</button>
-						</h5>
-					</div>
-					<div id="subcollapseThree" class="collapse" aria-labelledby="subheadingThree" data-parent="#accordion2">
-						<div class="card-body">
-							Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor.
-						</div>
-					</div>
-				</div>
-				<div class="card">
-					<div class="card-header" id="subheadingThree">
-						<h5 class="mb-0">
-							<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#subcollapseThree" aria-expanded="false" aria-controls="subcollapseThree">
-								<img class="plus-open" src="assets/frontend/images/plus.png" /><span class="ml-3 open-text">Collapsible Group Item</span>
-							</button>
-						</h5>
-					</div>
-					<div id="subcollapseThree" class="collapse" aria-labelledby="subheadingThree" data-parent="#accordion2">
-						<div class="card-body">
-							Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor.
-						</div>
-					</div>
-				</div>
-				<div class="card">
-					<div class="card-header" id="subheadingThree">
-						<h5 class="mb-0">
-							<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#subcollapseThree" aria-expanded="false" aria-controls="subcollapseThree">
-								<img class="plus-open" src="assets/frontend/images/plus.png" /><span class="ml-3 open-text">Collapsible Group Item</span>
-							</button>
-						</h5>
-					</div>
-					<div id="subcollapseThree" class="collapse" aria-labelledby="subheadingThree" data-parent="#accordion2">
-						<div class="card-body">
-							Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor.
-						</div>
-					</div>
-				</div>
+				
+				
+				
+				
+				
+				
+				
+				
 			</div>
 			</div>
 			<!-- faq section end -->

@@ -1,27 +1,31 @@
+<?php 
+$page = $this->crud_model->get_home_page()->row_array();
+?>
 <div class="course-banner">
 	<div class="container">
 		<div class="row justify-content-center">
 		<div class="course-details col-lg-12">
-			<h1 class="">Spark Databox Courses</h1>
-			<p class="description text-center">this is some demo text replace it from backend.Live online training and Self-paced video courses.</p>
+			<h1 class=""><?php echo $page['title'];?></h1>
+			<p class="description text-center"><?php echo $page['sub_title'];?></p>
 			<form class="mt-4">
 				<div class="form-inline justify-content-center">
 					<input type="text" placeholder="What do you want to learn?" name="search" class="form-control search-input">
+
 					<button type="submit" class="btn btn-default search-btn"><i class="fas fa-search"></i></button>
 				</div>
 			</form>
 			<div class="row text-center justify-content-center mt-5">
 				<div class="col-lg-2">
-					<img class="banner-icon" src="assets/frontend/images/leaf.png">
-					<p class="banner-icon-text">Certified Trainers</p>
+					<img class="banner-icon" src="<?php echo base_url('assets/frontend/images/').$page['widget_icon1'];?>">
+					<p class="banner-icon-text"><?php echo $page['widget_text1'];?></p>
 				</div>
 				<div class="col-lg-2">
-					<img class="banner-icon" src="assets/frontend/images/school.png">
-					<p class="banner-icon-text">Learn New Skills</p>
+					<img class="banner-icon" src="<?php echo base_url('assets/frontend/images/').$page['widget_icon2'];?>">
+					<p class="banner-icon-text"><?php echo $page['widget_text2'];?></p>
 				</div>
 				<div class="col-lg-2">
-					<img class="banner-icon" src="assets/frontend/images/cup.png">
-					<p class="banner-icon-text">Achieve Your Dreams</p>
+					<img class="banner-icon" src="<?php echo base_url('assets/frontend/images/').$page['widget_icon3'];?>">
+					<p class="banner-icon-text"><?php echo $page['widget_text3'];?></p>
 				</div>
 				
 			</div>
@@ -30,20 +34,20 @@
 	</div>
 	<div class="course-stats clearfix">
             <div>
-                <p class="counter">1048 +</p>
-                <p>Agile  Professionals trained</p>
+                <p class="counter"><?php echo $page['snipet_title1'];?></p>
+                <p><?php echo $page['snipet_text1'];?></p>
             </div>
             <div>
-                <p class="counter">350 +</p>
-                <p>Workshops every month</p>
+                <p class="counter"><?php echo $page['snipet_title2'];?></p>
+                <p><?php echo $page['snipet_text1'];?></p>
             </div>
             <div>
-                <p class="counter">40 +</p>
-                <p>Countries and counting</p>
+                <p class="counter"><?php echo $page['snipet_title3'];?></p>
+                <p><?php echo $page['snipet_text1'];?></p>
             </div>
             <div>
-                <p class="counter">100 +</p>
-                <p>Corporates Served</p>
+                <p class="counter"><?php echo $page['snipet_title4'];?></p>
+                <p><?php echo $page['snipet_text1'];?></p>
             </div>
         </div>
 	</div>
@@ -70,184 +74,93 @@
 	</div>
 </div> -->
 
+<div class="container-fluid mt-5">
+	<div class="row">
+		<div class="col-lg-4 border ">
+			<h4 class="text-center sub-heading-home place-students"><span class="border-after">Our Recently Placed Students</span></h4>
+				<div class="sliding-home example3-home example3">
+					<div class="one mt-4" style="top: -16px;">
+						
+						<?php
+							$rps = $this->crud_model->get_rps()->result_array();
+							foreach ($rps as $user) 
+                            { 
+						?>
+						<div class="one-user text-left">
+							<img src="<?php echo base_url('assets/frontend/images/').$user['thumbnail'];?>" class="user-img">
+							<span class="username"><?php echo $user['username'];?></span>
+							<span class="designation"><?php echo $user['designation'];?></span>
+						</div>
+						<?php } ?>
+						
+					</div>
 
-<div class="container mt-5">
-	<h3 class="section-heading2 text-center bline-courses">Our Top Courses</h3>
-	<div class="row mt-5">
-		<div class="col-lg-12">
-			<div class="course-carousel-live">
-				<a class="course-link" href="#">
-					<div class="course">
-						<div class="course-imgbox">
-							<img src="https://312895-958381-raikfcquaxqncofqfm.stackpathdns.com/uploads/thumbnails/course_thumbnails/a4d711721c8e7ce57a0b369c2fde1c2c.jpg" class="course-img">
+					<div id="animation_box" class="two">
+						<?php
+							$rps = $this->crud_model->get_rps()->result_array();
+							foreach ($rps as $user) 
+                            { 
+						?>
+						<div class="one-user text-left">
+							<img src="<?php echo base_url('assets/frontend/images/').$user['thumbnail'];?>" class="user-img">
+							<span class="username"><?php echo $user['username'];?></span>
+							<span class="designation"><?php echo $user['designation'];?></span>
 						</div>
-						<div class="course-details">
-							<h4 class="course-title2">Course Title</h4>
-							<p class="course-instructor">Course Instructor</p>
-							<div class="rating">
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                            </div>
-                            
-						</div>
+						<?php } ?>
 					</div>
-				</a>
-				<a class="course-link" href="#">
-					<div class="course">
-						<div class="course-imgbox">
-							<img src="https://312895-958381-raikfcquaxqncofqfm.stackpathdns.com/uploads/thumbnails/course_thumbnails/a4d711721c8e7ce57a0b369c2fde1c2c.jpg" class="course-img">
-						</div>
-						<div class="course-details">
-							<h4 class="course-title2">Course Title</h4>
-							<p class="course-instructor">Course Instructor</p>
-							<div class="rating">
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                            </div>
-                           
-						</div>
-					</div>
-				</a>
-				<a class="course-link" href="#">
-					<div class="course">
-						<div class="course-imgbox">
-							<img src="https://312895-958381-raikfcquaxqncofqfm.stackpathdns.com/uploads/thumbnails/course_thumbnails/a4d711721c8e7ce57a0b369c2fde1c2c.jpg" class="course-img">
-						</div>
-						<div class="course-details">
-							<h4 class="course-title2">Course Title</h4>
-							<p class="course-instructor">Course Instructor</p>
-							<div class="rating">
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                            </div>
-                            
-						</div>
-					</div>
-				</a>
-				<a class="course-link" href="#">
-					<div class="course">
-						<div class="course-imgbox">
-							<img src="https://312895-958381-raikfcquaxqncofqfm.stackpathdns.com/uploads/thumbnails/course_thumbnails/a4d711721c8e7ce57a0b369c2fde1c2c.jpg" class="course-img">
-						</div>
-						<div class="course-details">
-							<h4 class="course-title2">Course Title</h4>
-							<p class="course-instructor">Course Instructor</p>
-							<div class="rating">
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                            </div>
-                            
-						</div>
-					</div>
-				</a>
-				<a class="course-link" href="#">
-					<div class="course">
-						<div class="course-imgbox">
-							<img src="https://312895-958381-raikfcquaxqncofqfm.stackpathdns.com/uploads/thumbnails/course_thumbnails/a4d711721c8e7ce57a0b369c2fde1c2c.jpg" class="course-img">
-						</div>
-						<div class="course-details">
-							<h4 class="course-title2">Course Title</h4>
-							<p class="course-instructor">Course Instructor</p>
-							<div class="rating">
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                            </div>
-                            
-						</div>
-					</div>
-				</a>
-				<a class="course-link" href="#">
-					<div class="course">
-						<div class="course-imgbox">
-							<img src="https://312895-958381-raikfcquaxqncofqfm.stackpathdns.com/uploads/thumbnails/course_thumbnails/a4d711721c8e7ce57a0b369c2fde1c2c.jpg" class="course-img">
-						</div>
-						<div class="course-details">
-							<h4 class="course-title2">Course Title</h4>
-							<p class="course-instructor">Course Instructor</p>
-							<div class="rating">
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                            </div>
-                            
-						</div>
-					</div>
-				</a>
-				<a class="course-link" href="#">
-					<div class="course">
-						<div class="course-imgbox">
-							<img src="https://312895-958381-raikfcquaxqncofqfm.stackpathdns.com/uploads/thumbnails/course_thumbnails/a4d711721c8e7ce57a0b369c2fde1c2c.jpg" class="course-img">
-						</div>
-						<div class="course-details">
-							<h4 class="course-title2">Course Title</h4>
-							<p class="course-instructor">Course Instructor</p>
-							<div class="rating">
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                            </div>
-                            
-						</div>
-					</div>
-				</a>
-				<a class="course-link" href="#">
-					<div class="course">
-						<div class="course-imgbox">
-							<img src="https://312895-958381-raikfcquaxqncofqfm.stackpathdns.com/uploads/thumbnails/course_thumbnails/a4d711721c8e7ce57a0b369c2fde1c2c.jpg" class="course-img">
-						</div>
-						<div class="course-details">
-							<h4 class="course-title2">Course Title</h4>
-							<p class="course-instructor">Course Instructor</p>
-							<div class="rating">
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                            </div>
-                            
-						</div>
-					</div>
-				</a>
-
-			</div>
+					
+				</div>
 		</div>
-	</div>
-</div>
+		<?php
+		$categories = $this->crud_model->get_top_category()->result_array();
+		?>
+		<div class="col-lg-8 pl-3  ">
+			<div class="border pb-4" style="height: 507px;">
+			<h4 class="text-center sub-heading-home top-categories"><span class="border-after">Top Categories</span></h4>
+			<!-- Nav pills -->
+		  <ul class="nav nav-pills justify-content-center mt-4" role="tablist">
+		  	<?php 
+		  	$count = 0; foreach($categories as $category)
+		        {
+		        	$count++;
 
+		                    ?>
+		    <li class="nav-item">
+		      <a class="nav-link course-category-tab <?php if($count == 1) echo "active";?>" data-category="<?php echo $category['id']; ?>" data-toggle="pill" href="#tab-<?php echo $category['slug']; ?>"><?php echo $category['name']; ?></a>
+		    </li>
+		    <?php } ?>
+		    
+		  </ul>
 
-
-<div class="container mt-5">
-	<h3 class="section-heading2 text-center bline-courses">Learn Data Science</h3>
-	<div class="row mt-5">
-		<div class="col-lg-12">
-			<div class="course-carousel-live">
-				<a class="course-link" href="#">
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <?php 
+    $count = 0;
+    foreach($categories as $category)
+		        {
+		        	$count++;
+		                    ?>
+    <div id="tab-<?php echo $category['slug']; ?>" class="container tab-pane <?php if($count == 1) { echo "active"; } ?>"><br>
+      <div class="course-carousel-live-tabs" id="course-carousel-live-tabs-<?php echo $category['id']; ?>">
+      		<?php
+      		if($count == 1)
+      		{
+				$courses = $this->crud_model->get_courses_by_category($category['id']);
+				if($courses != NULL)
+		{
+				if($courses->num_rows() > 0)
+			{
+				$courses = $courses->result_array();
+				foreach($courses as $course)
+		        {
+			?>
+				<a class="course-link" href="<?php echo base_url('course/').$course['slug']; ?>">
 					<div class="course">
 						<div class="course-imgbox">
 							<img src="https://312895-958381-raikfcquaxqncofqfm.stackpathdns.com/uploads/thumbnails/course_thumbnails/a4d711721c8e7ce57a0b369c2fde1c2c.jpg" class="course-img">
 						</div>
 						<div class="course-details">
-							<h4 class="course-title2">Course Title</h4>
+							<h4 class="course-title2"><?php echo $course['title']; ?></h4>
 							<p class="course-instructor">Course Instructor</p>
 							<div class="rating">
                                     <i class="fas fa-star filled"></i>
@@ -260,147 +173,24 @@
 						</div>
 					</div>
 				</a>
-				<a class="course-link" href="#">
-					<div class="course">
-						<div class="course-imgbox">
-							<img src="https://312895-958381-raikfcquaxqncofqfm.stackpathdns.com/uploads/thumbnails/course_thumbnails/a4d711721c8e7ce57a0b369c2fde1c2c.jpg" class="course-img">
-						</div>
-						<div class="course-details">
-							<h4 class="course-title2">Course Title</h4>
-							<p class="course-instructor">Course Instructor</p>
-							<div class="rating">
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                            </div>
-                           
-						</div>
-					</div>
-				</a>
-				<a class="course-link" href="#">
-					<div class="course">
-						<div class="course-imgbox">
-							<img src="https://312895-958381-raikfcquaxqncofqfm.stackpathdns.com/uploads/thumbnails/course_thumbnails/a4d711721c8e7ce57a0b369c2fde1c2c.jpg" class="course-img">
-						</div>
-						<div class="course-details">
-							<h4 class="course-title2">Course Title</h4>
-							<p class="course-instructor">Course Instructor</p>
-							<div class="rating">
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                            </div>
-                            
-						</div>
-					</div>
-				</a>
-				<a class="course-link" href="#">
-					<div class="course">
-						<div class="course-imgbox">
-							<img src="https://312895-958381-raikfcquaxqncofqfm.stackpathdns.com/uploads/thumbnails/course_thumbnails/a4d711721c8e7ce57a0b369c2fde1c2c.jpg" class="course-img">
-						</div>
-						<div class="course-details">
-							<h4 class="course-title2">Course Title</h4>
-							<p class="course-instructor">Course Instructor</p>
-							<div class="rating">
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                            </div>
-                            
-						</div>
-					</div>
-				</a>
-				<a class="course-link" href="#">
-					<div class="course">
-						<div class="course-imgbox">
-							<img src="https://312895-958381-raikfcquaxqncofqfm.stackpathdns.com/uploads/thumbnails/course_thumbnails/a4d711721c8e7ce57a0b369c2fde1c2c.jpg" class="course-img">
-						</div>
-						<div class="course-details">
-							<h4 class="course-title2">Course Title</h4>
-							<p class="course-instructor">Course Instructor</p>
-							<div class="rating">
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                            </div>
-                            
-						</div>
-					</div>
-				</a>
-				<a class="course-link" href="#">
-					<div class="course">
-						<div class="course-imgbox">
-							<img src="https://312895-958381-raikfcquaxqncofqfm.stackpathdns.com/uploads/thumbnails/course_thumbnails/a4d711721c8e7ce57a0b369c2fde1c2c.jpg" class="course-img">
-						</div>
-						<div class="course-details">
-							<h4 class="course-title2">Course Title</h4>
-							<p class="course-instructor">Course Instructor</p>
-							<div class="rating">
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                            </div>
-                            
-						</div>
-					</div>
-				</a>
-				<a class="course-link" href="#">
-					<div class="course">
-						<div class="course-imgbox">
-							<img src="https://312895-958381-raikfcquaxqncofqfm.stackpathdns.com/uploads/thumbnails/course_thumbnails/a4d711721c8e7ce57a0b369c2fde1c2c.jpg" class="course-img">
-						</div>
-						<div class="course-details">
-							<h4 class="course-title2">Course Title</h4>
-							<p class="course-instructor">Course Instructor</p>
-							<div class="rating">
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                            </div>
-                            
-						</div>
-					</div>
-				</a>
-				<a class="course-link" href="#">
-					<div class="course">
-						<div class="course-imgbox">
-							<img src="https://312895-958381-raikfcquaxqncofqfm.stackpathdns.com/uploads/thumbnails/course_thumbnails/a4d711721c8e7ce57a0b369c2fde1c2c.jpg" class="course-img">
-						</div>
-						<div class="course-details">
-							<h4 class="course-title2">Course Title</h4>
-							<p class="course-instructor">Course Instructor</p>
-							<div class="rating">
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                            </div>
-                            
-						</div>
-					</div>
-				</a>
-
-			</div>
+			<?php } } } } else
+			{?>
+				<img style="width: 100px !important;" src="<?php echo base_url('assets/frontend/images/loading.gif');?>">
+			<?php } ?>
+				
+		</div>
+    </div>
+   
+    <?php } ?>
+  </div>
+  		</div>
+  		<!-- border wali div end -->
 		</div>
 	</div>
 </div>
 
 <div class="container mt-5">
-	<h3 class="section-heading2 text-center bline">Why Choose Spark Databox</h3>
+	<h4 class="text-center section-heading-home "><span class="border-after">Why Choose Spark Databox</span></h4>
 	<div class=" mt-4 row text-center justify-content-center">
 		<div class="col-lg-12">
 			<img width="100%" src="assets/frontend/images/infographic.png">
@@ -409,12 +199,33 @@
 	
 </div>
 
-<section class="course-carousel-area" style="background: #e8e6e6;min-height: 630;padding-top: 20px;">
+<div class="container mt-5">
+	<h4 class="text-center section-heading-home "><span class="border-after">Categories</span></h4>
+	<div class="row mt-5">
+		<?php
+		$categories = $this->crud_model->get_non_top_category()->result_array();
+		?>
+		<?php foreach($categories as $category){ ?>
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 ">
+				<div class="other-category-box border">
+					<img src="assets/frontend/images/code.png">
+					<span><?php echo $category['name'] ; ?></span>
+				</div>
+				
+			</div>
+		<?php } ?>
+		
+	</div>
+</div>
+
+
+
+
+<section class="course-carousel-area mt-5" style="background: #e8e6e6;min-height: 630;padding-top: 20px;">
     <div class="container-lg">
         <div class="row">
             <div class="col">
-                <h3 class="section-heading2 text-center bline">What Our Students Have To Say</h3>
-                <!-- <h1 class="course-carousel-title text-center" style="margin: 33px 30px;color: #000000;font-weight: 600;">Our Happy Students</h1> -->
+               <h4 class="text-center section-heading-home "><span class="border-after">What Our Students Have To Say</span></h4>
                 
 <div id="myCarousel" class="carousel slide mt-5" data-ride="carousel">
 	<!-- Carousel indicators -->
@@ -438,10 +249,10 @@
 	<div class="carousel-inner">
         		
 		<div class="item carousel-item active">
-			<div class="img-box"><img src="https://media.licdn.com/dms/image/C4D03AQHDm0Q_JNXKSQ/profile-displayphoto-shrink_200_200/0?e=1583971200&v=beta&t=ZjgQvyiE6yCtmG9dN1tGZxCndrkZph-tbsivk7jQ5cY" alt=""></div>
+			<div class="img-box"><img src="https://media-exp1.licdn.com/dms/image/C4E03AQHgSfxwObya6Q/profile-displayphoto-shrink_200_200/0?e=1586390400&v=beta&t=OGnVlN5dGfgA-a9US7yS3DsMLJN_Gf1z4o-naJGb1mk" alt=""></div>
 			<p class="testimonial">Having trained by top-notch professionals from Spark Databox is a pleasure. They are a real hidden gem, if you are reading this you are lucky. I am already an ML expert. I enrolled in ML for a specific reason and they proved that they can deliver. I again choose them for AWS training. I would definitely recommend them for all of your training needs.</p>
-            <p class="overview"><b>Suresh Kumar Sethuramaswamy</b>Big Data ,ML and AI Specialist at <a href="#">Microsoft.</a>
-            <br><a href="https://www.linkedin.com/in/sureshsethu/" target="_blank" style="color: #393939;font-style: italic;">Follow on<img src=" https://d2h0cx97tjks2p.cloudfront.net/wp-content/uploads/2016/05/Linkedin-logo-icon.png" style="height: 19px;margin-left: 4px;"></a>
+            <p class="overview"><b>Bharathwaj </b>Oracle Cloud Developer  <a href="#"></a>
+            <br><a href="https://www.linkedin.com/in/btms/" target="_blank" style="color: #393939;font-style: italic;">Follow on<img src=" https://d2h0cx97tjks2p.cloudfront.net/wp-content/uploads/2016/05/Linkedin-logo-icon.png" style="height: 19px;margin-left: 4px;"></a>
             </p>
 			<div class="star-rating">
 				<ul class="list-inline">
@@ -626,7 +437,8 @@
 
 
 <div class="container-fluid mt-5">
-	<h3 class="section-heading2 text-center bline-partner">Our Students Placed In</h3>
+	
+	<h4 class="text-center section-heading-home "><span class="border-after">Our Students Placed In</span></h4>
 	<div class=" mt-5 row text-center justify-content-center">
 		<div class="col-lg-12">
 			<img width="100%" src="assets/frontend/images/comp.png">

@@ -146,11 +146,33 @@
 </footer>
 
 <div class="hide-sm container-fluid bot-footer ">
- <a class="bot-links" data-toggle="modal" data-target="#website-inquiry-popup"><i class="fas fa-envelope mr-2"></i><span>Quick Enquiry</span></a>
- <a class="bot-links" data-toggle="modal" data-target="#website-inquiry-popup" title="Request Callback"><i class="fas fa-mobile mr-2"></i><span>Request Callback</span></a>
+ <a class="bot-links open-modal-btn" data-type="inquiry" data-text="Quick Enquiry" data-toggle="modal" data-target="#website-inquiry-popup"><i class="fas fa-envelope mr-2"></i><span>Quick Enquiry</span></a>
+ <a class="bot-links open-modal-btn" data-type="inquiry" data-text="Request Callback" data-toggle="modal" data-target="#website-inquiry-popup" title="Request Callback"><i class="fas fa-mobile mr-2"></i><span>Request Callback</span></a>
  <a href="tel:+91-4446311234" class="bot-links"><i class="fas fa-phone-volume mr-2"></i><span><img height="25px" class="ml-1" src="https://sparkdatabox.com/assets/frontend/default/images/ind_flag.png"> +91-4446311234</span></a>
  <a href="tel:+1-6502652492" style="margin-left:-10px;" class="bot-links"><span><img height="25px" class="ml-1" src="https://sparkdatabox.com/assets/frontend/default/images/usa_flag.png">+1-6502652492</span></a>
  <a target="_blank" style="margin-left:-10px;" href="https://api.whatsapp.com/send?phone=917530088009" class="bot-links"><img src="https://312895-958381-raikfcquaxqncofqfm.stackpathdns.com/assets/frontend/default/images/whatsapp.png" class="mr-1" height="17px"><span> +91-7530088009</span></a>
- <a href="#" class="bot-links" data-toggle="modal" data-target="#country_modal"><i class="fas fa-globe-americas mr-2" aria-hidden="true"></i><span>Country</span></a>
+ <!-- <a href="#" class="bot-links" data-toggle="modal" data-target="#country_modal"><i class="fas fa-globe-americas mr-2" aria-hidden="true"></i><span>Country</span></a> -->
  
 </div>
+
+<script type="text/javascript">
+    setTimeout(function(){
+   <?php
+    $popup = $this->crud_model->show_popup($this->session->userdata('ip'));
+    if($popup && $this->session->userdata('inquiry_popup_cookie') != '1')
+    {
+        $this->session->set_userdata('inquiry_popup_cookie','1');
+    ?>
+    $("#website-inquiry-popup").modal();
+    console.log("on");
+    <?php
+    }
+    else
+    {?>
+        console.log("popup off");
+    <?php
+    }    
+    ?>
+    
+ }, 10000);
+</script>

@@ -230,7 +230,7 @@
                                         foreach($related_courses as $rc) {
                                             $cou = $this->crud_model->get_course($rc['related_course_id'])->row_array() ;
                                          ?>
-                                            <button data-id="<?php echo $cc['id']; ?>" class="btn btn-info ml-2 remove-course-btn"><?php echo $cou['title']; ?> <i class="fa fa-close ml-2"></i></button>
+                                            <button data-id="<?php echo $rc['id']; ?>" class="btn btn-info ml-2 remove-course-btn"><?php echo $cou['title']; ?> <i class="fa fa-close ml-2"></i></button>
                                         <?php } ?>
                                 </div>
                                 <p class="related-response"></p>

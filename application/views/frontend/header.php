@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md  navbar-dark2">
+<nav class="navbar navbar-expand-md navbar-dark2">
   <!-- Brand -->
   <a class="navbar-brand" href="<?php echo base_url();?>">
     <img height="55px;" src="<?php echo base_url('assets/frontend/images/logo-light.png');?>">
@@ -6,7 +6,7 @@
 
   <!-- Toggler/collapsibe Button -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
+    <span class="navbar-toggler-icon"><i class="fas fa-bars" style="color:#fff; font-size:28px;"></i></span>
   </button>
 
   <!-- Navbar links -->

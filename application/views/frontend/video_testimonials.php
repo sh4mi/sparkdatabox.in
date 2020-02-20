@@ -40,12 +40,12 @@
 <?php } ?>
 
 <!-- Modal HTML -->
-    <div id="videoModal" class="modal fade">
+    <div id="videoModal" class="modal fade w-100">
         <div class="modal-dialog">
-            <div class="modal-content">
+            <div class="modal-content w-100" >
                 
-                <div class="modal-body">
-                    <iframe id="cartoonVideo" width="720" height="480" src="//www.youtube.com/embed/YE7VzlLtp-4" frameborder="0" allowfullscreen></iframe>
+                <div class="modal-body ">
+                    <iframe id="cartoonVideo" width="100%" height="480" src="//www.youtube.com/embed/YE7VzlLtp-4" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
         </div>

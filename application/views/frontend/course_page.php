@@ -8,8 +8,9 @@
 
 <div class="course-banner">
 	<div class="container">
-		<div class="row">
-		<div class="course-details col-lg-8">
+		<div class="row justify-content-center">
+		<div class="course-details col-md-8 mt-3">
+			<div class="text-center-resp">
 			<h3 class="course-title"><?php echo $course['title']; ?></h3>
 			
 
@@ -32,12 +33,13 @@
 				<?php echo $course['description']; ?> 
 			</p>
 			<div class="course-buttons mt-4">
-				<button class="btn btn-banner"><i class="far fa-calendar-check  mr-2" aria-hidden="true"></i>Upcoming Batches</button>
-				<button class="btn btn-banner ml-2 open-modal-btn" data-text="Contact Course Advisior" data-type="none"><i class="fa fa-phone-square-alt  mr-2" aria-hidden="true"></i>Contact Course Advisior</button>
+				<button class="btn btn-banner mt-4"><i class="far fa-calendar-check  mr-2" aria-hidden="true"></i>Upcoming Batches</button>
+				<button class="btn btn-banner ml-2 open-modal-btn mt-4" data-text="Contact Course Advisior" data-type="none"><i class="fa fa-phone-square-alt  mr-2" aria-hidden="true"></i>Contact Course Advisior</button>
+			</div>
 			</div>
 		</div>
-		<div class="course-video col-lg-4 pl-5 ">
-			<div class="video_box" style="position: relative;">
+		<div class="course-video col-md-4 padding-responsive mt-5">
+			<div class="video_box " style="position: relative;">
         	<a href="javascript:void(0);"
         	<?php if($this->session->userdata('course_popup_cookie') == '1'){ ?>
         		class="js-video-button" data-videourl="<?php echo $course['demo_video_url'];?>"

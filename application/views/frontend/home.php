@@ -4,8 +4,8 @@ $page = $this->crud_model->get_home_page()->row_array();
 <div class="course-banner">
 	<div class="container">
 		<div class="row justify-content-center">
-		<div class="course-details col-lg-12">
-			<h1 class=""><?php echo $page['title'];?></h1>
+		<div class="course-details col-md-12">
+			<h1 class=""><?php echo  $page['title'];?></h1>
 			<p class="description text-center"><?php echo $page['sub_title'];?></p>
 			<form class="mt-4">
 				<div class="form-inline justify-content-center">
@@ -15,15 +15,15 @@ $page = $this->crud_model->get_home_page()->row_array();
 				</div>
 			</form>
 			<div class="row text-center justify-content-center mt-5">
-				<div class="col-lg-2">
+				<div class="col-md-2">
 					<img class="banner-icon" src="<?php echo base_url('assets/frontend/images/').$page['widget_icon1'];?>">
 					<p class="banner-icon-text"><?php echo $page['widget_text1'];?></p>
 				</div>
-				<div class="col-lg-2">
+				<div class="col-md-2">
 					<img class="banner-icon" src="<?php echo base_url('assets/frontend/images/').$page['widget_icon2'];?>">
 					<p class="banner-icon-text"><?php echo $page['widget_text2'];?></p>
 				</div>
-				<div class="col-lg-2">
+				<div class="col-md-2">
 					<img class="banner-icon" src="<?php echo base_url('assets/frontend/images/').$page['widget_icon3'];?>">
 					<p class="banner-icon-text"><?php echo $page['widget_text3'];?></p>
 				</div>
@@ -52,7 +52,7 @@ $page = $this->crud_model->get_home_page()->row_array();
         </div>
 	</div>
 </div>
-
+</div>
 <!-- <div class="container mt-5">
 	<h3 class="section-heading2 text-center bline">Spark Databox Training</h3>
 	<div class="row mt-5 text-center justify-content-center">
@@ -227,7 +227,7 @@ $page = $this->crud_model->get_home_page()->row_array();
             <div class="col">
                <h4 class="text-center section-heading-home "><span class="border-after">What Our Students Have To Say</span></h4>
                 
-<div id="myCarousel" class="carousel slide mt-5" data-ride="carousel">
+<div id="myCarousel" class="carousel slide mt-5 " data-ride="carousel">
 	<!-- Carousel indicators -->
 	<ol class="carousel-indicators">
 		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -436,12 +436,12 @@ $page = $this->crud_model->get_home_page()->row_array();
 <?php include_once('video_testimonials.php'); ?>
 
 
-<div class="container-fluid mt-5">
+<div class="container-fluid mt-5" id="student">
 	
 	<h4 class="text-center section-heading-home "><span class="border-after">Our Students Placed In</span></h4>
 	<div class=" mt-5 row text-center justify-content-center">
 		<div class="col-lg-12">
-			<img width="100%" src="assets/frontend/images/comp.png">
+			<img class="img-fluid"  src="assets/frontend/images/comp.png">
 		</div>
 	</div>
 	

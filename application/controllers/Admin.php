@@ -303,6 +303,12 @@ class Admin extends BaseController
             redirect(site_url('admin/categories'), 'refresh');
            
         }
+        else if($param1 == 'course')
+        {
+            $this->crud_model->delete_course($id);
+            redirect(site_url('admin/courses'), 'refresh');
+           
+        }
         else if($param1 == 'edit')
         {
             $this->crud_model->update_category($category_id);

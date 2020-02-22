@@ -360,7 +360,13 @@ class Crud_model extends CI_Model
         $result['msg'] = true;
         return $result;
     }
-
+public function delete_course($id='')
+    {
+        $this->db->where('id',$id);
+        $this->db->delete('courses'); 
+        $result['msg'] = true;
+        return $result;
+    }
     public function get_course_categories($course_id)
     {
         $this->db->where('course_id',$course_id);

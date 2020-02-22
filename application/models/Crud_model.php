@@ -561,6 +561,12 @@ public function delete_course($id='')
         return $this->db->get('key_feature');
     }
 
+    public function delete_key_feature($id='')
+    {   
+        $this->db->where('id',$id);
+        $this->db->delete('key_feature');
+    }
+
 
     public function import_key_features($course_id,$section_id)
     {

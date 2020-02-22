@@ -330,6 +330,11 @@ class Admin extends BaseController
            $this->crud_model->delete_rps($id);
             redirect(site_url('admin/common_items'), 'refresh');   
         }
+        else if($param1 == 'common_feature')
+        {
+           $this->crud_model->delete_key_feature($id);
+            redirect(site_url('admin/common_items'), 'refresh');   
+        }
 
     }
 

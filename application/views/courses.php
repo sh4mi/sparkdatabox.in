@@ -50,7 +50,7 @@
                         <td class="text-center">
                              
                             <a class="btn btn-sm btn-info" href="<?php echo base_url().'admin/courses/edit/'.$course['id']; ?>" title="Edit"><i class="fa fa-pencil"></i></a>
-                            <a class="btn btn-sm btn-danger" id="delete-btn" href="#" data-url="<?php echo base_url().'admin/delete/course/'.$course['id']; ?>" data-id="<?php echo $course['id']; ?>" title="Delete"><i class="fa fa-trash"></i></a> 
+                            <a class="btn btn-sm delete-btn btn-danger" id="delete-btn" href="#" data-url="<?php echo base_url().'admin/delete/course/'.$course['id']; ?>" data-id="<?php echo $course['id']; ?>" title="Delete"><i class="fa fa-trash"></i></a> 
                         </td>
                     </tr>
                     <?php

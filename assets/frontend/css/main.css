@@ -1740,3 +1740,30 @@ width: 100%;
 }
 
 }
+.cus-table
+{
+    width: 100%;
+    margin: 25px 0;
+    padding: 10px;
+    background: #fff;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .1);
+    -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, .1);
+}
+.cus-table td
+{
+        border-bottom: 1px solid #e0dede;
+    text-align: left;
+    padding: 15px 7px 15px 15px;
+    /*border-right: 1px solid #e0dede;*/
+    font-weight: 600;
+    color: #1b1b1b;
+}
+.cyan
+{
+       color: #3a9aae;
+}
+.cant-find-text
+{
+        position: relative;
+    top: -20px;
+}

@@ -33,7 +33,7 @@
 				<?php echo $course['description']; ?> 
 			</p>
 			<div class="course-buttons mt-4">
-				<button class="btn btn-banner mt-4"><i class="far fa-calendar-check  mr-2" aria-hidden="true"></i>Upcoming Batches</button>
+				<a href="#upcoming-batches"><button class="btn btn-banner mt-4"><i class="far fa-calendar-check  mr-2" aria-hidden="true"></i>Upcoming Batches</button></a>
 				<button class="btn btn-banner ml-2 open-modal-btn mt-4" data-text="Contact Course Advisior" data-type="none"><i class="fa fa-phone-square-alt  mr-2" aria-hidden="true"></i>Contact Course Advisior</button>
 			</div>
 			</div>
@@ -208,13 +208,7 @@
 			<?php } ?>
 
 
-			 <!-- <li><a href="#features"><img src="assets/frontend/images/features.png"><span>Key Features</span></a></li>
-			 <li><a href="#curriculum"><img src="assets/frontend/images/sylabus.png"><span>Course Syllabus</span></a></li>
-			 <li><a href="#career"><img src="assets/frontend/images/career.png"><span>Career</span></a></li>
-			 <li><a href="#certification"><img src="assets/frontend/images/certificate.png"><span>Certification</span></a></li>
 			 
-			 <li><a href="#reviews"><img src="assets/frontend/images/review.png"><span>Reviews</span></a></li>
-			 <li><a href="#faqs"><img src="assets/frontend/images/faq.png"><span>FAQ's</span></a></li> -->
 			 
 			</ul>
 		</div>
@@ -234,21 +228,114 @@
 			<!-- about section end  -->
 			<?php } ?>
 
-			
-			
+			<div class="section mt-1" id="upcoming-batches">
+				<h3 class="section-heading mb-4">
+					<span class="border-after">Upcoming Batches</span></h3>
+					<div class="row">
+						<div class="col-lg-9">
+							<?php
+    
+	$table = array();
+  $first = '<table class="cus-table cus-table-bordered">
+    <thead>
+      
+    </thead>
+    <tbody>';
+     
+   
+    for ($x = 3; $x <= 12; $x++) {
+    $start_date = date('d-M-y',strtotime("+".$x." day"));
+    $check_day = date(strtotime("+".$x." day"));
+    $day = date('l', $check_day);
+    
+    $duration = 28+$x; // change this to course duration 4 weeks 28 days
+    $t1 = "(09:30 PM - 11:00 PM)";
+    $t2 = "(11:00 AM - 12:30 PM)";
+    $t3 = "(09:30 AM - 11:00 AM)";
+    $t4 = "(09:30 AM - 12:00 PM)";
+    $t5 = "(09:30 PM - 12:00 AM)";	 
+    switch ($day) {
+    case "Monday":
+    	$days_increment = 5;
+    	$end_date = date('d-M-y',strtotime("+".$duration." day"));
+    	$days ="Mon-Fri";
+        $table[] =  "<tr>
+        		<td><i class='fa fa-calendar-check mr-2 cyan' aria-hidden='true'></i>".$start_date."</td>
+        		<td>Monday - Friday</td>
+        		<td>".$t1."</td>
+        		
+        	  </tr>";
+        break;
+    case "Tuesday":
+        $days_increment = 5;
 
-			
+    	$end_date = date('d-M-y',strtotime("+".$duration." day"));
+        $table[] = "<tr>
+        		<td><i class='fa fa-calendar-check mr-2 cyan' aria-hidden='true'></i>".$start_date."</td>
+        		<td>Tuesday - Saturday</td>
+        		<td>".$t1."</td>
+        		
+        	  </tr>";
+        break;
+    case "Friday":
+        $days_increment = 2;
+    	$end_date = date('d-M-y',strtotime("+".$duration." day"));
+        $table[] = "<tr>
+        		<td><i class='fa fa-calendar-check mr-2 cyan' aria-hidden='true'></i>".$start_date."</td>
+        		
+        		<td>Friday - Saturday</td>
+        		<td>".$t5."</td>
+        		
+        	  </tr>";
+        break;
+    case "Saturday":
+       $days_increment = 2;
+    	$end_date = date('d-M-y',strtotime("+".$duration." day"));
+        $table[] = "<tr>
+        		<td><i class='fa fa-calendar-check mr-2 cyan' aria-hidden='true'></i>".$start_date."</td>
+        		
+        		<td>Saturday - Sunday</td>
+        		<td>".$t5."</td>
+        		
+        	  </tr>";
+        break;    
+    default:
+        
+}
+}
 
-			
 
-			
+ 
 
-			
+  $arrlength = count($table);
 
-			
+for($x = 0; $x < $arrlength; $x++) {
+    $first .= $table[$x];
+    
+}
+$first .='</tbody>
+  </table>';
 
+  echo $first;
 
+   ?>
+						</div>
+
+						<div class="batch col-lg-3 text-center">
+				<img height="150px" class="" src="<?php echo base_url();?>assets/frontend/images/calendar.gif">
+				<h4 class="cant-find-text">Can’t find a batch you were looking for?</h4>
+				<button class="btn btn-default2 open-modal-btn" data-text="Request A Batch" data-type="none"><i class="fa fa-phone-alt  mr-2" aria-hidden="true"></i>REQUEST A BATCH</button>
 		</div>
+
+					</div>
+					
+					
+		
+			
+			</div>
+			
+		</div>
+
 		<div class="col-lg-3 right-sidebar">
 			<!-- <div class="batch">
 				<img class="calendar" src="assets/frontend/images/calendar.png">

@@ -399,7 +399,7 @@ $(document).on("click",".upload-new-img",function(event){
 
      	
        	$(".new-img").click();
-		 
+		 return false;
 		
     });
 

@@ -204,7 +204,7 @@
                         foreach ($sections as $section) {
                                    $count ++;
                 ?>
-			 <li ><a href="#section-<?php echo slugify($section['sidebar_title']);?>" class="<?php if($count==1){ echo "sidebar-link-active";}?>"><img src="<?php echo base_url('assets/frontend/images/').$section['icon'];?>"></i><span><?php echo $section['sidebar_title'];?></span></a></li>
+			 <li ><a href="#section-<?php echo slugify($section['sidebar_title']);?>" class="<?php if($count==1){ echo "sidebar-link-active";}?> section-link"><img src="<?php echo base_url('assets/frontend/images/').$section['icon'];?>"></i><span><?php echo $section['sidebar_title'];?></span></a></li>
 			<?php } ?>
 
 
@@ -459,6 +459,16 @@ $first .='</tbody>
 <!-- course page template scripts -->
 <script type="text/javascript">
 	$(document).ready(function(){
+
+	$('.section-link').click(function(e) {
+		
+    e.preventDefault();
+    var href = $(this).attr("href");
+    $('html, body').animate({
+      scrollTop: $(href).offset().top-40
+    }, 500);
+  });
+
 
       $(function(){
       $(window).scroll(function(){

@@ -38,7 +38,7 @@
     <div class="modal-content">
       <div class="modal-body text-center">
         <div class="loader text-center">
-          <img height="100px"> src="<?php echo base_url('assets/frontend/images/loading.gif');?>">
+          <img height="100px" src="<?php echo base_url('assets/frontend/images/loading.gif');?>">
         </div>
         <div clas="loader-txt">
           <h4 class="mt-5">Loading Images please wait...</h4>

@@ -162,6 +162,20 @@
     background:white;
     box-shadow: 0px 0px 5px 3px #bababa;
    }
+   .widget-certificate-import
+   {
+        border: 1px solid;
+    text-align: center;
+    padding: 10px;
+    background: #e6e6e6;
+    margin-top: 5px;
+    cursor: pointer;
+   }
+   .widget-certificate-import:hover
+   {
+    background:white;
+    box-shadow: 0px 0px 5px 3px #bababa;
+   }
    .widget-response
    {
    	    /*border: 1px solid darkgray;*/

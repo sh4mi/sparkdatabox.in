@@ -302,6 +302,25 @@ jQuery(document).ready(function(){
 		
 	});
 
+	$(document).on("click",".widget-certificate-import",function(event){
+		var type = $(this).attr("data-type");
+		var id = $(this).attr("data-id");
+		var course_id = $(this).attr('data-course');
+		var url = baseURL +"admin/import_certificate_ajax";
+		$.ajax({
+	            url: url,
+	            data:{type:type,id:id,course_id:course_id},
+	            type : 'POST',
+	            success: function(response)
+	            {
+	              console.log(response);
+	              //$("#widget-response"+id).html(response);
+	              location.reload();
+	            }
+	        });
+		
+	});
+
 	$(document).on("click",".add-more-question",function(event){
 		var count = $(this).attr("data-count");
 		count ++; 

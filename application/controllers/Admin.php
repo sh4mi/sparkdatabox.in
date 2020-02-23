@@ -221,7 +221,12 @@ class Admin extends BaseController
         else if($type == 'common_feature')
         {
             $this->crud_model->update_common_feature($id);
-            redirect(site_url('admin/common_items/'.$course_id), 'refresh');
+            redirect(site_url('admin/common_items/'), 'refresh');
+        }
+         else if($type == 'common_certificate')
+        {
+            $this->crud_model->update_common_certificate($id);
+            redirect(site_url('admin/common_items/'), 'refresh');
         }
         else if($type == 'image')
         {
@@ -341,6 +346,11 @@ class Admin extends BaseController
            $this->crud_model->delete_key_feature($id);
             redirect(site_url('admin/common_items'), 'refresh');   
         }
+        else if($param1 == 'common_certificate')
+        {
+           $this->crud_model->delete_common_certificate($id);
+            redirect(site_url('admin/common_items'), 'refresh');   
+        }
 
     }
 
@@ -456,6 +466,14 @@ class Admin extends BaseController
    $course_id = $this->input->post('course_id');
    $section_id = $this->input->post('id'); 
    $this->crud_model->import_key_features($course_id,$section_id);
+
+  }
+
+  public function import_certificate_ajax()
+  {
+   $course_id = $this->input->post('course_id');
+   $section_id = $this->input->post('id'); 
+   $this->crud_model->import_certificate($course_id,$section_id);
 
   }
 

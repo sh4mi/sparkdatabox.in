@@ -13,6 +13,9 @@
 		<div class="widget-box-import" data-type="feature" data-course="<?php echo $course_id; ?>" data-id="<?php echo $section['id'];?>">
 			Import Features
 		</div>
+		<div class="widget-certificate-import" data-type="certificate" data-course="<?php echo $course_id; ?>" data-id="<?php echo $section['id'];?>">
+			Import Certificate
+		</div>
 		<div class="widget-box" data-type="list" data-course="<?php echo $course_id; ?>" data-id="<?php echo $section['id'];?>">
 			Add List Items
 		</div>

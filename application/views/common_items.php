@@ -245,15 +245,15 @@
                                     <div class="col-md-3">
                                                     <div class="form-group">
                                                         <label for="">Icon</label><br>
-                                                        <button type="button" data-msg="image size must be 128 x 128 px" data-height="128" data-width="128" data-input="form-filename-key-features" class="btn btn-info media-modal-btn">Choose Image</button>
+                                                        <button type="button" data-msg="image size must be 500 x 500 px" data-height="500" data-width="500" data-input="form-filename-common-cert" class="btn btn-info media-modal-btn">Choose Image</button>
                                                     </div>
                                     </div>
                                     <div class="col-md-3">
                                                 <div class="form-group">
                                                     <label for="">File Name</label><br>
                                                     <p class="form-filename"></p>
-                                                    <input type="hidden" id="form-filename-key-features" name="form-filename">
-                                                    <span id="image-size-validation-key-features" class="hidden image-size-validation-msg" data-height="128" data-width="128">image size must be 128 x 128 px</span>
+                                                    <input type="hidden" id="form-filename-common-cert" name="form-filename">
+                                                    <span id="image-size-validation-key-features" class="hidden image-size-validation-msg" data-height="500" data-width="500">image size must be 500 x 500 px</span>
                                                 </div>
                                     </div>
                                        
@@ -274,8 +274,8 @@
                         ?>
                             <div class="testimonial border mt-5 p-5">
                                 <div class="container-btns">
-                                        <a class="edit-modal-btn" data-id="<?php echo $testimonial['id'];?>"  data-type="edit_common_feature" data-heading="Edit feature" href="#">edit <i class="fa fa-edit"></i></a>
-                                        <a class="text-danger ml-2 delete-btn" id="" href="#" data-url="<?php echo base_url().'admin/delete/common_feature/'.$testimonial['id']; ?>" data-id="<?php echo $testimonial['id']; ?>" title="Delete">delete <i class="fa fa-trash"></i></a> 
+                                        <a class="edit-modal-btn" data-id="<?php echo $testimonial['id'];?>"  data-type="edit_common_certificate" data-heading="Edit Common Certificate" href="#">edit <i class="fa fa-edit"></i></a>
+                                        <a class="text-danger ml-2 delete-btn" id="" href="#" data-url="<?php echo base_url().'admin/delete/common_certificate/'.$testimonial['id']; ?>" data-id="<?php echo $testimonial['id']; ?>" title="Delete">delete <i class="fa fa-trash"></i></a> 
                                 </div>
                                 <p>Heading: <?php echo $testimonial['heading'];?></p>
                                 <p>Text : <?php echo $testimonial['body'];?></p>

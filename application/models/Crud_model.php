@@ -587,6 +587,12 @@ public function delete_course($id='')
         $this->db->delete('key_feature');
     }
 
+    public function delete_common_certificate($id='')
+    {   
+        $this->db->where('id',$id);
+        $this->db->delete('certificate');
+    }
+
 
     public function import_key_features($course_id,$section_id)
     {
@@ -602,6 +608,24 @@ public function delete_course($id='')
           $feature['body'] = $kf['body'];
           $feature['icon'] = $kf['icon'];
           $this->db->insert('widget_feature',$feature);
+          
+        }
+    }
+
+     public function import_certificate($course_id,$section_id)
+    {
+       $key_features = $this->crud_model->get_common_certificate()->result_array();
+        foreach ($key_features as $kf) 
+        {
+          $data['course_id'] = $course_id;
+          $data['section_id'] = $section_id;
+          $data['type'] = 'image';
+          $this->db->insert('section_widgets',$data);
+          $feature['widget_id'] =  $this->db->insert_id();
+          $feature['heading'] = $kf['heading'];
+          $feature['body'] = $kf['body'];
+          $feature['icon'] = $kf['icon'];
+          $this->db->insert('widget_image',$feature);
           
         }
     }
@@ -723,6 +747,18 @@ public function delete_course($id='')
             }
         $this->db->where('id',$id);
         $this->db->update('key_feature', $data);
+    }
+
+    public function update_common_certificate($id)
+    {
+        $data['heading'] = $this->input->post('heading');
+           $data['body'] = $this->input->post('body');
+           if($this->input->post('form-filename') !='')
+            {
+                $data['icon'] = $this->input->post('form-filename');
+            }
+        $this->db->where('id',$id);
+        $this->db->update('certificate', $data);
     }
 
      public function update_widget_image($id)

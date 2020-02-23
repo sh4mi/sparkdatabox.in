@@ -38,10 +38,10 @@
     <div class="modal-content">
       <div class="modal-body text-center">
         <div class="loader text-center">
-          <img src="<?php echo base_url('assets/frontend/images/loading.gif');?>">
+          <img height="100px"> src="<?php echo base_url('assets/frontend/images/loading.gif');?>">
         </div>
         <div clas="loader-txt">
-          <p>Loading Images please wait...</small></p>
+          <h4 class="mt-5">Loading Images please wait...</h4>
         </div>
       </div>
     </div>

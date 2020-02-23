@@ -40,6 +40,7 @@ jQuery(document).ready(function(){
 	
 	$(document).on("click",".media-modal-btn",function(event){
 	 event.preventDefault();
+
 	 $("#loadMe").modal({
       backdrop: "static", //remove ability to close modal with click
       keyboard: false, //remove option to close with keyboard
@@ -64,6 +65,7 @@ jQuery(document).ready(function(){
               $("#loadMe").modal('hide');
             }
           });
+	 return false;
 	
 	});
    	

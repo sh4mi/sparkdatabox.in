@@ -37,9 +37,11 @@
   <div class="modal-dialog modal-sm" role="document">
     <div class="modal-content">
       <div class="modal-body text-center">
-        <div class="loader"></div>
+        <div class="loader text-center">
+          <img src="<?php echo base_url('assets/frontend/images/loading.gif');?>">
+        </div>
         <div clas="loader-txt">
-          <p>Check out this slick bootstrap spinner modal. <br><br><small>We are addicted to Bootstrap... #love</small></p>
+          <p>Loading Images please wait...</small></p>
         </div>
       </div>
     </div>

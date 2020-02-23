@@ -109,7 +109,7 @@
     <script type="text/javascript" src="<?php echo base_url(); ?>assets/dist/DataTables/dt/js/dataTables.bootstrap.min.js"></script>
     
     
-    <!-- <script src="<?php echo base_url(); ?>assets/js/common.js" type="text/javascript"></script> -->
+    <script src="<?php echo base_url(); ?>assets/js/common.js" type="text/javascript"></script>
     <script src="<?php echo base_url(); ?>assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="<?php echo base_url(); ?>assets/dist/js/adminlte.min.js" type="text/javascript"></script>
     <!-- <script src="<?php echo base_url(); ?>assets/dist/js/pages/dashboard.js" type="text/javascript"></script> -->

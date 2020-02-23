@@ -216,6 +216,12 @@ class Admin extends BaseController
         {
             $this->crud_model->update_widget_feature($id);
             redirect(site_url('admin/courses/edit/'.$course_id), 'refresh');
+            
+        }
+        else if($type == 'common_feature')
+        {
+            $this->crud_model->update_common_feature($id);
+            redirect(site_url('admin/common_items/'.$course_id), 'refresh');
         }
         else if($type == 'image')
         {

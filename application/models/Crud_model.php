@@ -693,6 +693,18 @@ public function delete_course($id='')
         $this->db->update('widget_feature', $data);
     }
 
+    public function update_common_feature($id)
+    {
+        $data['heading'] = $this->input->post('heading');
+           $data['body'] = $this->input->post('body');
+           if($this->input->post('form-filename') !='')
+            {
+                $data['icon'] = $this->input->post('form-filename');
+            }
+        $this->db->where('id',$id);
+        $this->db->update('key_feature', $data);
+    }
+
      public function update_widget_image($id)
     {
          $data['heading'] = $this->input->post('heading');

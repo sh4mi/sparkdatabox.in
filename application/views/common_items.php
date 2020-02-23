@@ -200,7 +200,7 @@
                         ?>
                             <div class="testimonial border mt-5 p-5">
                                 <div class="container-btns">
-                                        
+                                        <a class="edit-modal-btn" data-id="<?php echo $testimonial['id'];?>"  data-type="edit_common_feature" data-heading="Edit feature" href="#">edit <i class="fa fa-edit"></i></a>
                                         <a class="text-danger ml-2 delete-btn" id="" href="#" data-url="<?php echo base_url().'admin/delete/common_feature/'.$testimonial['id']; ?>" data-id="<?php echo $testimonial['id']; ?>" title="Delete">delete <i class="fa fa-trash"></i></a> 
                                 </div>
                                 <p>Heading: <?php echo $testimonial['heading'];?></p>

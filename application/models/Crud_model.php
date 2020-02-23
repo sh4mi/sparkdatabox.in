@@ -552,6 +552,26 @@ public function delete_course($id='')
             $this->db->insert('key_feature',$data);
     }
 
+    public function add_common_certificate()
+    {
+         $data['heading'] = $this->input->post('heading');
+           $data['body'] = $this->input->post('body');
+           if($this->input->post('form-filename') !='')
+            {
+                $data['icon'] = $this->input->post('form-filename');
+            }
+
+            $this->db->insert('certificate',$data);
+    }
+    public function get_common_certificate($id='')
+    {   
+        if($id != '')
+        {
+            $this->db->where('id',$id);
+        }
+        return $this->db->get('certificate');
+    }
+
     public function get_key_feature($id='')
     {   
         if($id != '')

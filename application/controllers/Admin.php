@@ -445,6 +445,12 @@ class Admin extends BaseController
      redirect(site_url('admin/common_items'), 'refresh'); 
   }
 
+    public function add_common_certificate()
+  {
+    $this->crud_model->add_common_certificate();
+     redirect(site_url('admin/common_items'), 'refresh'); 
+  }
+
   public function import_features_ajax()
   {
    $course_id = $this->input->post('course_id');

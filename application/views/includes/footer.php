@@ -32,6 +32,20 @@
     </div>
   </div>
 
+  <!-- Loading Modal -->
+<div class="modal fade" id="loadMe" tabindex="-1" role="dialog" aria-labelledby="loadMeLabel">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-body text-center">
+        <div class="loader"></div>
+        <div clas="loader-txt">
+          <p>Check out this slick bootstrap spinner modal. <br><br><small>We are addicted to Bootstrap... #love</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
   <div class="hidden">
     <form class="new-img-form" id="new-img-form" method="post" enctype="multipart/form-data" role="form" action="<?php echo base_url('admin/upload_new_img'); ?>">
       <input type="file" name="newimg" id="upfile" class="new-img" onchange="submit_form();">

@@ -15,6 +15,7 @@
                           <li class="active"><a data-toggle="tab" href="#banner">Video Testimonials</a></li>
                           <li><a data-toggle="tab" href="#seo">Recentely placed students</a></li>
                           <li><a data-toggle="tab" href="#features">Key Features</a></li>
+                          <li><a data-toggle="tab" href="#certificate">Certificate</a></li>
                           
                          
                         </ul>
@@ -195,6 +196,79 @@
                 <div class="row justify-content-center">
                     <div class="col-md-6">
                         <?php $testimonials = $this->crud_model->get_key_feature()->result_array();
+                            foreach ($testimonials as $testimonial) 
+                            { 
+                        ?>
+                            <div class="testimonial border mt-5 p-5">
+                                <div class="container-btns">
+                                        <a class="edit-modal-btn" data-id="<?php echo $testimonial['id'];?>"  data-type="edit_common_feature" data-heading="Edit feature" href="#">edit <i class="fa fa-edit"></i></a>
+                                        <a class="text-danger ml-2 delete-btn" id="" href="#" data-url="<?php echo base_url().'admin/delete/common_feature/'.$testimonial['id']; ?>" data-id="<?php echo $testimonial['id']; ?>" title="Delete">delete <i class="fa fa-trash"></i></a> 
+                                </div>
+                                <p>Heading: <?php echo $testimonial['heading'];?></p>
+                                <p>Text : <?php echo $testimonial['body'];?></p>
+                                <p>Icon : <?php echo $testimonial['icon'];?></p>
+                            </div>
+                        <?php
+
+                            }
+                        ;?>
+                    </div>
+                </div>
+                </div>
+
+
+                <div id="certificate" class="tab-pane fade ">
+
+                    <?php $certificate_count = $this->crud_model->get_common_certificate()->num_rows();
+                          if($certificate_count < 1)  
+                            { 
+                        ?>
+                    <form role="form" id="" action="<?php echo base_url().'admin/add_common_certificate'; ?>" method="post" enctype="multipart/form-data" role="form">
+                    <div class="box-body ">
+                                <div class="row">
+                                    <h4 class="mt-5 mb-5">Add Common Certificate</h4>
+                                    <div class="col-md-3">
+                                                          
+                                        <div class="form-group">
+                                            <label for="fname">Heading</label>
+                                            <input type="text" class="form-control required" value=""  required name="heading" maxlength="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="fname">Text</label>
+                                            <textarea required="" class="form-control textarea" name="body"></textarea>
+                                            <!-- <input type="text" class="form-control required" value=""  required  maxlength=""> -->
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                                    <div class="form-group">
+                                                        <label for="">Icon</label><br>
+                                                        <button type="button" data-msg="image size must be 128 x 128 px" data-height="128" data-width="128" data-input="form-filename-key-features" class="btn btn-info media-modal-btn">Choose Image</button>
+                                                    </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <label for="">File Name</label><br>
+                                                    <p class="form-filename"></p>
+                                                    <input type="hidden" id="form-filename-key-features" name="form-filename">
+                                                    <span id="image-size-validation-key-features" class="hidden image-size-validation-msg" data-height="128" data-width="128">image size must be 128 x 128 px</span>
+                                                </div>
+                                    </div>
+                                       
+                                    
+                                </div>
+                    </div>
+                    <div class="box-footer">
+                        <input type="submit" class="btn btn-primary" value="Submit" />
+                         
+                    </div>
+                </form>
+            <?php } ?>
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <?php $testimonials = $this->crud_model->get_common_certificate()->result_array();
                             foreach ($testimonials as $testimonial) 
                             { 
                         ?>

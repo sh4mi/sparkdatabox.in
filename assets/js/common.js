@@ -40,6 +40,11 @@ jQuery(document).ready(function(){
 	
 	$(document).on("click",".media-modal-btn",function(event){
 	 event.preventDefault();
+	 $("#loadMe").modal({
+      backdrop: "static", //remove ability to close modal with click
+      keyboard: false, //remove option to close with keyboard
+      show: true //Display loader!
+    });
 	 var msg = $(this).attr("data-msg");
 	 required_height = $(this).attr("data-height");
 	 required_width = $(this).attr("data-width");
@@ -56,6 +61,7 @@ jQuery(document).ready(function(){
               $("#select-image").hide();
               $("#media_modal").modal();
               $(".modal-size-msg").html(msg);
+              $("#loadMe").modal('hide');
             }
           });
 	

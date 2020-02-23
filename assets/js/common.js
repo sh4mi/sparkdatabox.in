@@ -397,7 +397,7 @@ jQuery(document).ready(function(){
 
 $(document).on("click",".upload-new-img",function(event){
 
-     	
+     	console.log("upload new image clicked.");
        	$(".new-img").click();
 		 return false;
 		

@@ -54,6 +54,9 @@
       <li class="nav-item">
         <a class="nav-link" href="https://labs.sparkdatabox.com">Labs</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="<?php echo base_url('contact_us')?>">Contact us</a>
+      </li>
       <!-- <li class="nav-item">
         <a class="nav-link" href="#">Link</a>
       </li> -->

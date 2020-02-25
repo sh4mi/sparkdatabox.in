@@ -1,7 +1,7 @@
 <?php
  $section = $this->crud_model->get_widget('review','',$id)->row_array();
 ?>
-<form action="<?php echo base_url('admin/widget_form/image/').$id.'/'.$course_id;?>" method="post" enctype="multipart/form-data">
+<form action="<?php echo base_url('admin/widget_form/review/').$id.'/'.$course_id;?>" method="post" enctype="multipart/form-data">
 				  <div class="form-group">
 				    <label for="heading">Username:</label>
 				    <input type="text" value="<?php echo $section['heading'];?>" class="form-control" id="heading" name="heading">

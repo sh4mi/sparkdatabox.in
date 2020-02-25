@@ -228,6 +228,11 @@ class Admin extends BaseController
             $this->crud_model->update_common_certificate($id);
             redirect(site_url('admin/common_items/'), 'refresh');
         }
+         else if($type == 'common_rps')
+        {
+            $this->crud_model->update_common_rps($id);
+            redirect(site_url('admin/common_items/'), 'refresh');
+        }
         else if($type == 'image')
         {
             $this->crud_model->update_widget_image($id);

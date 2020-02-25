@@ -137,7 +137,7 @@
                         ?>
                             <div class="testimonial border mt-5 p-5">
                                 <div class="container-btns">
-                                        
+                                        <a class="edit-modal-btn" data-id="<?php echo $testimonial['id'];?>"  data-type="edit_common_rps" data-heading="Edit Recently placed students" href="#">edit <i class="fa fa-edit"></i></a>
                                         <a class="text-danger ml-2 delete-btn" id="" href="#" data-url="<?php echo base_url().'admin/delete/rps/'.$testimonial['id']; ?>" data-id="<?php echo $testimonial['id']; ?>" title="Delete">delete <i class="fa fa-trash"></i></a> 
                                 </div>
                                 <p><?php echo $testimonial['username'];?></p>
@@ -231,13 +231,13 @@
                                                           
                                         <div class="form-group">
                                             <label for="fname">Heading</label>
-                                            <input type="text" class="form-control required" value=""  required name="heading" maxlength="">
+                                            <input type="text" class="form-control " value=""  name="heading" maxlength="">
                                         </div>
                                     </div>
                                     <div class="col-md-3">
                                         <div class="form-group">
                                             <label for="fname">Text</label>
-                                            <textarea required="" class="form-control textarea" name="body"></textarea>
+                                            <textarea  class="form-control textarea" name="body"></textarea>
                                             <!-- <input type="text" class="form-control required" value=""  required  maxlength=""> -->
                                         </div>
                                     </div>
@@ -245,7 +245,7 @@
                                     <div class="col-md-3">
                                                     <div class="form-group">
                                                         <label for="">Icon</label><br>
-                                                        <button type="button" data-msg="image size must be 500 x 500 px" data-height="500" data-width="500" data-input="form-filename-common-cert" class="btn btn-info media-modal-btn">Choose Image</button>
+                                                        <button type="button" data-msg="image size must be 1600 x 1132 px" data-height="1132" data-width="1600" data-input="form-filename-common-cert" class="btn btn-info media-modal-btn">Choose Image</button>
                                                     </div>
                                     </div>
                                     <div class="col-md-3">
@@ -253,7 +253,7 @@
                                                     <label for="">File Name</label><br>
                                                     <p class="form-filename"></p>
                                                     <input type="hidden" id="form-filename-common-cert" name="form-filename">
-                                                    <span id="image-size-validation-key-features" class="hidden image-size-validation-msg" data-height="500" data-width="500">image size must be 500 x 500 px</span>
+                                                    <span id="image-size-validation-key-features" class="hidden image-size-validation-msg" data-height="1132" data-width="1600">image size must be 1600 x 1132 px</span>
                                                 </div>
                                     </div>
                                        
@@ -280,6 +280,7 @@
                                 <p>Heading: <?php echo $testimonial['heading'];?></p>
                                 <p>Text : <?php echo $testimonial['body'];?></p>
                                 <p>Icon : <?php echo $testimonial['icon'];?></p>
+                                <img width="400px" src="<?php echo base_url('assets/frontend/images/').$testimonial['icon'];?>">
                             </div>
                         <?php
 

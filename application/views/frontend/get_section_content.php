@@ -121,8 +121,9 @@
 						<div class="col-lg-8">
 							<p class="section-text"><?php echo $widget['body'];?></p>
 						</div>
-						<div class="col-lg-4">
-							<img class="open-cert-btn" src="<?php echo base_url('assets/frontend/images/').$widget['icon'];?>">
+						<div class="col-lg-4 ">
+							<img class="open-cert-btn " src="<?php echo base_url('assets/frontend/images/').$widget['icon'];?>">
+							
 						</div>
 					</div>
 				</div>

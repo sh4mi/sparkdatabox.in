@@ -75,8 +75,26 @@ class Crud_model extends CI_Model
         $this->db->insert('rps', $data);
     }
 
-    public function get_rps()
+     public function update_common_rps($id='')
     {
+        $data['username'] = $this->input->post('username');
+        $data['designation'] = $this->input->post('designation');
+
+        if($this->input->post('form-filename') !='')
+        {
+            $data['thumbnail'] = $this->input->post('form-filename');
+        }
+        
+        $this->db->where('id',$id);
+        $this->db->update('rps', $data);
+    }
+
+    public function get_rps($id='')
+    {
+        if($id !='')
+        {
+            $this->db->where('id',$id);
+        }
        return $this->db->get("rps");
     }
 

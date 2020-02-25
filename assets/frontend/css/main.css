@@ -409,7 +409,7 @@
 .feature-block .col-lg-4 h4
 {
  font-size: 16px;
- font-weight: 400;
+ font-weight: 600;
  
 }
 .feature-block .col-lg-4 p
@@ -1767,3 +1767,4 @@ width: 100%;
         position: relative;
     top: -20px;
 }
+

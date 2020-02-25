@@ -21,23 +21,22 @@
                 </div><!-- /.box-header -->
                 <div class="tab-content">
                 <div id="banner" class="tab-pane fade in active">
-                    <form role="form" id="" action="<?php echo base_url().'admin/edit_home_banner'; ?>" method="post" enctype="multipart/form-data" role="form">
+                    <form role="form" id="" action="<?php echo base_url().'admin/update_settings'; ?>" method="post" enctype="multipart/form-data" role="form">
                     <div class="box-body ">
                                 <div class="row">
-                                    <div class="col-md-12">         <?php
-                                    $page = $this->crud_model->get_home_page()->row_array(); ?>
+                                    <div class="col-md-12">        
                                         <div class="row">
 
                                             <div class="col-md-6">                     
                                             <div class="form-group">
                                                 <label for="fname">Phone Number (IND)</label>
-                                                <input type="text" class="form-control required" value="<?php echo $page['title'];  ?>"  required name="title" maxlength="">
+                                                <input type="text" class="form-control required" value="<?php echo get_frontend_settings('phone_ind');  ?>"  required name="phone_ind" maxlength="">
                                             </div>
                                             </div>
                                             <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="fname">Phone Number (USA)</label>
-                                                <input type="text" class="form-control required" value="<?php echo $page['sub_title'];  ?>"  required name="sub_title" maxlength="">
+                                                <input type="text" class="form-control required" value="<?php echo get_frontend_settings('phone_us');   ?>"  required name="phone_us" maxlength="">
                                             </div>
                                             </div>
                                         </div>
@@ -46,7 +45,7 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="fname">Phone Number (Whatsapp)</label>
-                                                <input type="text" class="form-control required" value="<?php echo $page['widget_text1'];  ?>"  required name="widget_text1" maxlength="25">
+                                                <input type="text" class="form-control required" value="<?php echo get_frontend_settings('phone_whatsapp');   ?>"  required name="phone_whatsapp" maxlength="25">
                                             </div>
                                         </div>
                                         
@@ -54,13 +53,13 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="fname">Offer Text</label>
-                                                <input type="text" class="form-control required" value="<?php echo $page['widget_text2'];  ?>"  required name="widget_text2" maxlength="25">
+                                                <input type="text" class="form-control required" value="<?php echo get_frontend_settings('offer_text');   ?>"  required name="offer_text" maxlength="25">
                                             </div>
                                         </div>
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label for="">Coupon Code</label><br>
-                                                <input type="text" class="form-control required" value="<?php echo $page['widget_text2'];  ?>"  required name="widget_text2" maxlength="25">
+                                                <input type="text" class="form-control required" value="<?php echo get_frontend_settings('coupon_code');   ?>"  required name="coupon_code" maxlength="25">
                                             </div>
                                         </div>
                                         

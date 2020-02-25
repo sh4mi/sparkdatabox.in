@@ -10,6 +10,10 @@
     {
       $seo = $this->crud_model->get_course_seo($course['id'])->row_array();
     }
+    else
+    {
+      $seo = $this->crud_model->get_page_seo(1)->row_array();
+    }
   ?>
   <title><?php echo $seo['title'];?></title>
   <meta name="description" content="<?php echo $seo['description'];?>" />

@@ -1,7 +1,22 @@
+<div class="alert alert-success alert-dismissible text-center hide-sm">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <div class="left-s">
+    <h5 class="inline"><?php echo get_frontend_settings('offer_text');?></h5>
+    <p class="coupon-code inline"><?php echo get_frontend_settings('coupon_code');   ?></p>
+  </div>
+  <div class="right-s">
+    <p class="inline">Call Us and Get Offer</p>
+    <a href="tel:<?php echo get_frontend_settings('phone_ind');?>" class="bot-links"><i class="fas fa-phone-volume mr-2"></i><span><img height="25px" class="ml-1" src="https://sparkdatabox.com/assets/frontend/default/images/ind_flag.png"><?php echo get_frontend_settings('phone_ind');?></span></a>
+    <a href="tel:<?php echo get_frontend_settings('phone_us');   ?>" style="margin-left:-10px;" class="bot-links"><span><img height="25px" class="ml-1" src="https://sparkdatabox.com/assets/frontend/default/images/usa_flag.png"><?php echo get_frontend_settings('phone_us');   ?></span></a>
+    <a target="_blank" style="margin-left:-10px;" href="https://api.whatsapp.com/send?phone=<?php echo get_frontend_settings('phone_whatsapp');   ?>" class="bot-links"><img src="https://312895-958381-raikfcquaxqncofqfm.stackpathdns.com/assets/frontend/default/images/whatsapp.png" class="mr-1" height="17px"><span> <?php echo get_frontend_settings('phone_whatsapp');   ?></span></a>
+  </div>
+
+</div>
+
 <nav class="navbar navbar-expand-md navbar-dark2">
   <!-- Brand -->
   <a class="navbar-brand" href="<?php echo base_url();?>">
-    <img height="55px;" src="<?php echo base_url('assets/frontend/images/logo-light.png');?>">
+    <img class="little-up" height="55px;" src="<?php echo base_url('assets/frontend/images/logo-light.png');?>">
   </a>
 
   <!-- Toggler/collapsibe Button -->
@@ -11,7 +26,7 @@
 
   <!-- Navbar links -->
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
-    <ul class="navbar-nav">
+    <ul class="navbar-nav little-up">
        <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle category_dropdown_link" href="#" id="navbardrop" data-toggle="dropdown">
         Training Courses

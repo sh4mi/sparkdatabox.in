@@ -154,15 +154,15 @@
         <a class="bot-links open-modal-btn" data-type="inquiry" data-text="Request Callback" data-toggle="modal" data-target="#website-inquiry-popup" title="Request Callback"><i class="fas fa-mobile mr-2"></i><span>Request Callback</span></a>
         </div> 
         <div class="col-6 col-md-2 p-0 mt-2">
-        <a href="tel:+91-4446311234" class="bot-links"><i class="fas fa-phone-volume mr-2"></i><span><img height="25px" class="ml-1" src="https://sparkdatabox.com/assets/frontend/default/images/ind_flag.png"> +91-4446311234</span></a>
+       <a href="tel:<?php echo get_frontend_settings('phone_ind');?>" class="bot-links"><i class="fas fa-phone-volume mr-2"></i><span><img height="25px" class="ml-1" src="https://sparkdatabox.com/assets/frontend/default/images/ind_flag.png"><?php echo get_frontend_settings('phone_ind');?></span></a>
 
         </div>
         <div class="col-6 col-md-2 p-0 mt-2">
-        <a href="tel:+1-6502652492" style="margin-left:-10px;" class="bot-links"><span><img height="25px" class="ml-1" src="https://sparkdatabox.com/assets/frontend/default/images/usa_flag.png">+1-6502652492</span></a>
+        <a href="tel:<?php echo get_frontend_settings('phone_us');   ?>" style="margin-left:-10px;" class="bot-links"><span><img height="25px" class="ml-1" src="https://sparkdatabox.com/assets/frontend/default/images/usa_flag.png"><?php echo get_frontend_settings('phone_us');   ?></span></a>
 
         </div>
         <div class="col-6 col-md-2 p-0 mt-2">
-        <a target="_blank" style="margin-left:-10px;" href="https://api.whatsapp.com/send?phone=917530088009" class="bot-links"><img src="https://312895-958381-raikfcquaxqncofqfm.stackpathdns.com/assets/frontend/default/images/whatsapp.png" class="mr-1" height="17px"><span> +91-7530088009</span></a>
+             <a target="_blank" style="margin-left:-10px;" href="https://api.whatsapp.com/send?phone=<?php echo get_frontend_settings('phone_whatsapp');   ?>" class="bot-links"><img src="https://312895-958381-raikfcquaxqncofqfm.stackpathdns.com/assets/frontend/default/images/whatsapp.png" class="mr-1" height="17px"><span> <?php echo get_frontend_settings('phone_whatsapp');   ?></span></a>
 
         </div>
 

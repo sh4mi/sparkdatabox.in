@@ -63,6 +63,21 @@ class Home extends CI_Controller {
        
         $this->load->view('frontend/index', $page_data);
     }
+    public function contact_us() {
+        $page_data['page_name'] = "contact";
+        $page_data['page_title'] = 'Contact us';
+       $page_data['msg'] = '';
+        $this->load->view('frontend/index', $page_data);
+    }
+
+    public function submit_contact()
+    {
+        $msg = $this->crud_model->send_contact_mail();
+         $page_data['page_name'] = "contact";
+        $page_data['page_title'] = 'Contact us';
+        $page_data['msg'] = $msg;
+        $this->load->view('frontend/index', $page_data);
+    }
 
     public function hide_inquiry_popup_forever()
     {   

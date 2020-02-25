@@ -115,6 +115,8 @@ class Admin extends BaseController
             $this->loadViews("settings", $this->global, NULL, NULL);
     }
 
+
+
     // public function course_page()
     // {
     //     $this->global['pageTitle'] = 'Course Page';
@@ -488,6 +490,13 @@ class Admin extends BaseController
    $this->crud_model->import_certificate($course_id,$section_id);
 
   } 
+
+  public function update_settings()
+    {
+        $this->crud_model->update_settings();
+        redirect(site_url('admin/settings'), 'refresh');
+
+    }
 
 
 

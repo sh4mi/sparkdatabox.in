@@ -58,6 +58,8 @@ $route['translate_uri_dashes'] = FALSE;
 
 /*********** USER DEFINED ROUTES *******************/
 $route['course_page'] = 'home/course_page';
+$route['contact_us'] = 'home/contact_us';
+
 $route['course/(:any)'] = "home/course/$1";
 $route['loginMe'] = 'login/loginMe';
 $route['dashboard'] = 'user';

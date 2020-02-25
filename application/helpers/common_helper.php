@@ -25,3 +25,14 @@ if ( ! function_exists('slugify'))
         return $text;
     }
 }
+
+if (! function_exists('get_frontend_settings')) {
+  function get_frontend_settings($key = '') {
+    $CI	=&	get_instance();
+    $CI->load->database();
+
+    $CI->db->where('dkey', $key);
+    $result = $CI->db->get('frontend_settings')->row()->value;
+    return $result;
+  }
+}

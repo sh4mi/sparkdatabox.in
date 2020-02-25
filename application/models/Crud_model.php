@@ -1031,6 +1031,36 @@ public function delete_course($id='')
         echo json_encode($data);
     }
 
+    public function send_contact_mail()
+    {
+            $response = 'Thanks for contacting us. our course advisor will contact you soon.';
+            $email =  $this->input->post("email");
+            $type = "Contact us page";
+            $phone = $this->input->post('phone');
+            $msg = $this->input->post('msg');
+            if(isset($_POST['course']))
+            {
+              $course = $this->input->post('course');  
+            }
+            else
+            {
+                $course = '';
+            }
+            
+
+            $email_sub = $type.": sparkdatabox.in";
+            $email_msg = "From: sparkdatabox.in <br>Type: ".$type."<br>Email: ".$email."<br>"."Phone: ".$phone."<br>Message: ".$msg."<br>Course: ".$course;
+            $email_to = "training@sparkdatabox.com";
+            if($email !='')
+                {
+                    $this->send_smtp_mail($email_msg , $email_sub , $email_to);
+                
+                }
+            $data['success'] = true;
+       // echo json_encode($data);
+            return $response;
+    }
+
     public function send_smtp_mail($msg=NULL, $sub=NULL, $to=NULL, $from=NULL) 
     {
         
@@ -1038,7 +1068,7 @@ public function delete_course($id='')
         
 
         if($from == NULL)
-            $from = 'support@sparkdatabox.com';
+            $from = 'helpdesk@sparkdatabox.com';
             
         
         
@@ -1054,16 +1084,16 @@ public function delete_course($id='')
             $mail->isSMTP();                                      // Set mailer to use SMTP
             $mail->Host = 'secure.emailsrvr.com';  // Specify main and backup SMTP servers
             $mail->SMTPAuth = true;                               // Enable SMTP authentication
-            $mail->Username = 'support@sparkdatabox.com';                 // SMTP username
-            $mail->Password = 'Html5css3';                           // SMTP password
+            $mail->Username = 'helpdesk@sparkdatabox.com';                 // SMTP username
+            $mail->Password = '@Irforce@!*&^1';                           // SMTP password
             $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
             $mail->Port = 465;                                    // TCP port to connect to
         
             //Recipients
-            $mail->From = "support@sparkdatabox.com";
-            $mail->setFrom('support@sparkdatabox.com', 'SparkDatabox Support');
+            $mail->From = "helpdesk@sparkdatabox.com";
+            $mail->setFrom('helpdesk@sparkdatabox.com', 'SparkDatabox Support');
             $mail->addAddress($to);               // Name is optional
-            $mail->addReplyTo('support@sparkdatabox.com', 'contact support');
+            $mail->addReplyTo('helpdesk@sparkdatabox.com', 'contact support');
         
             //Content
             $mail->isHTML(true);                                  // Set email format to HTML
@@ -1083,5 +1113,28 @@ public function delete_course($id='')
 
     }
 
+public function update_settings() {
+        $data['value'] = html_escape($this->input->post('phone_ind'));
+        $this->db->where('dkey', 'phone_ind');
+        $this->db->update('frontend_settings', $data);
+
+        $data['value'] = html_escape($this->input->post('phone_us'));
+        $this->db->where('dkey', 'phone_us');
+        $this->db->update('frontend_settings', $data);
+
+        $data['value'] = html_escape($this->input->post('phone_whatsapp'));
+        $this->db->where('dkey', 'phone_whatsapp');
+        $this->db->update('frontend_settings', $data);
+
+        $data['value'] = html_escape($this->input->post('offer_text'));
+        $this->db->where('dkey', 'offer_text');
+        $this->db->update('frontend_settings', $data);
+
+        $data['value'] = html_escape($this->input->post('coupon_code'));
+        $this->db->where('dkey', 'coupon_code');
+        $this->db->update('frontend_settings', $data);
+
+        
+    }
 
 }

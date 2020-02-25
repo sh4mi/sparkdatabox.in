@@ -35,7 +35,7 @@
                                 
                                 <div class="col-md-5">                                
                                     <div class="form-group">
-                                        <label for="fname">Course Description (500 characters)</label>
+                                        <label for="fname">Course Description (800 characters)</label>
                                         <textarea name="description" resize="none" class="form-control textarea"  required></textarea>
                                     </div>
                                     
@@ -43,7 +43,7 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label for="">Thumbnail</label><br>
-                                        <button type="button" data-msg="image size must be 300 x 300 px" data-input="form-filename-course-a" data-height="300" data-width="300" class="btn btn-info media-modal-btn">Choose Image</button>
+                                        <button type="button" data-msg="image size must be 400 x 240 px" data-input="form-filename-course-a" data-height="240" data-width="400" class="btn btn-info media-modal-btn">Choose Image</button>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
@@ -51,7 +51,7 @@
                                         <label for="">File Name</label><br>
                                         <p class="form-filename"></p>
                                         <input type="hidden" id="form-filename-course-a" name="form-filename">
-                                        <span id="image-size-validation-msg-course" class="hidden image-size-validation-msg" data-height="300" data-width="300">image size must be 300 x 300 px</span>
+                                        <span id="image-size-validation-msg-course" class="hidden image-size-validation-msg" data-height="240" data-width="400">image size must be 400 x 240 px</span>
                                     </div>
                                 </div>
                             </div>

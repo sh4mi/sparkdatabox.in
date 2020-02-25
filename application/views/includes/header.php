@@ -138,6 +138,7 @@
                 <li><a href="<?php echo base_url('admin/common_items');?>"><i class="fa fa-circle-o"></i>Common Items</a></li>
               </ul>
             </li>
+            
             <?php
             if($role == ROLE_ADMIN || $role == ROLE_MANAGER)
             {
@@ -158,6 +159,14 @@
             <?php
             }
             ?>
+
+            <li>
+              <a href="<?php echo base_url();?>admin/settings" >
+                <i class="fa fa-cog"></i>
+                <span>Settings</span>
+              </a>
+            </li>
+
           </ul>
         </section>
         <!-- /.sidebar -->

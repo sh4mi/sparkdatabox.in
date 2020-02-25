@@ -54,7 +54,7 @@
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label for="">Thumbnail</label><br>
-                                        <button type="button" data-msg="image size must be 600 x 600 px" data-input="form-filename-course-e" data-height="500" data-width="500" class="btn btn-info media-modal-btn">Choose Image</button>
+                                        <button type="button" data-msg="image size must be 400 x 240 px" data-input="form-filename-course-e" data-height="240" data-width="400" class="btn btn-info media-modal-btn">Choose Image</button>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
@@ -62,13 +62,13 @@
                                         <label for="">File Name</label><br>
                                         <p class="form-filename"><?php echo $course['thumbnail'];  ?></p>
                                         <input type="hidden" id="form-filename-course-e" name="form-filename">
-                                        <span id="image-size-validation-msg-course" class="hidden image-size-validation-msg" data-height="500" data-width="500">image size must be 500 x 500 px</span>
+                                        <span id="image-size-validation-msg-course" class="hidden image-size-validation-msg" data-height="240" data-width="400">image size must be 400 x 240 px</span>
                                     </div>
                                 </div>
                                 <div class="col-md-5">                                
                                     <div class="form-group">
-                                        <label for="fname">Course Description (500 characters)</label>
-                                        <textarea name="description" resize="none" class="form-control textarea" maxlength="500" required><?php echo $course['description'];  ?> </textarea>
+                                        <label for="fname">Course Description (800 characters)</label>
+                                        <textarea name="description" resize="none" class="form-control textarea" maxlength="800" required><?php echo $course['description'];  ?> </textarea>
                                     </div>
                                     
                                 </div>

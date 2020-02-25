@@ -108,6 +108,13 @@ class Admin extends BaseController
             $this->loadViews("home", $this->global, NULL, NULL);
     }
 
+    public function settings()
+    {
+        
+            $this->global['pageTitle'] = 'settings';
+            $this->loadViews("settings", $this->global, NULL, NULL);
+    }
+
     // public function course_page()
     // {
     //     $this->global['pageTitle'] = 'Course Page';
@@ -480,7 +487,9 @@ class Admin extends BaseController
    $section_id = $this->input->post('id'); 
    $this->crud_model->import_certificate($course_id,$section_id);
 
-  }
+  } 
+
+
 
 //end class
 }

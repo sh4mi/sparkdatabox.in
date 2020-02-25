@@ -465,7 +465,7 @@ $first .='</tbody>
     e.preventDefault();
     var href = $(this).attr("href");
     $('html, body').animate({
-      scrollTop: $(href).offset().top-40
+      scrollTop: $(href).offset().top-58
     }, 500);
   });
 

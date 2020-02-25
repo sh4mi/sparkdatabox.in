@@ -11,6 +11,10 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
+#loadMe
+{
+ z-index: 2000;
+}
 .media-thumbnail:hover
 {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 12px 1px #06a4ca;

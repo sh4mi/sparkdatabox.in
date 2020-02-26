@@ -1085,7 +1085,7 @@ padding:5px;
 }
 
 .cb_box {
-    background: #3a9aae;
+    /*background: #3a9aae;*/
     width: 17.3%;
     margin-left: -3px !important;
 }
@@ -1105,7 +1105,7 @@ padding:5px;
 }
 
 .cb_box_inner a {
-    color: #fff!important;
+    /*color: #fff!important;*/
     font-size: 16px;
 }
 .fixed_box span i {

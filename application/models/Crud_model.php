@@ -1082,10 +1082,10 @@ public function delete_course($id='')
             //Server settings
             $mail->SMTPDebug = 0;                                 // Enable verbose debug output
             $mail->isSMTP();                                      // Set mailer to use SMTP
-            $mail->Host = 'secure.emailsrvr.com';  // Specify main and backup SMTP servers
+            $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
             $mail->SMTPAuth = true;                               // Enable SMTP authentication
-            $mail->Username = 'helpdesk@sparkdatabox.com';                 // SMTP username
-            $mail->Password = '@Irforce@!*&^1';                           // SMTP password
+            $mail->Username = 'sparkdataboxtraining@gmail.com';                 // SMTP username
+            $mail->Password = 'SG#mwEQuOAX&';                           // SMTP password
             $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
             $mail->Port = 465;                                    // TCP port to connect to
         
